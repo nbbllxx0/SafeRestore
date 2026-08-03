@@ -1,0 +1,2422 @@
+{
+  "counts": {
+    "calibration": 136,
+    "detector_val": 48,
+    "test": 104,
+    "train": 111
+  },
+  "dataset": "kolektor_sdd",
+  "min_calibration_positives": 18,
+  "official_fold": null,
+  "part_counts": {
+    "calibration": 17,
+    "detector_val": 6,
+    "test": 13,
+    "train": 14
+  },
+  "policy": "powered item-level split for second-domain authorization; calibration targets >= 18 defect-positive images; not the official Kolektor protocol fold",
+  "positive_counts": {
+    "calibration": 18,
+    "detector_val": 6,
+    "test": 13,
+    "train": 15
+  },
+  "records": [
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos01",
+      "sample_id": "kos01/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos02",
+      "sample_id": "kos02/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos03",
+      "sample_id": "kos03/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos04",
+      "sample_id": "kos04/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos05",
+      "sample_id": "kos05/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos06",
+      "sample_id": "kos06/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos07",
+      "sample_id": "kos07/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos08",
+      "sample_id": "kos08/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos09",
+      "sample_id": "kos09/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos10",
+      "sample_id": "kos10/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos11",
+      "sample_id": "kos11/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos12",
+      "sample_id": "kos12/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos13",
+      "sample_id": "kos13/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos14",
+      "sample_id": "kos14/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos15",
+      "sample_id": "kos15/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos16",
+      "sample_id": "kos16/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos17",
+      "sample_id": "kos17/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos18",
+      "sample_id": "kos18/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos19",
+      "sample_id": "kos19/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos20",
+      "sample_id": "kos20/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos21",
+      "sample_id": "kos21/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos22",
+      "sample_id": "kos22/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos23",
+      "sample_id": "kos23/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos24",
+      "sample_id": "kos24/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos25",
+      "sample_id": "kos25/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos26",
+      "sample_id": "kos26/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos27",
+      "sample_id": "kos27/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos28",
+      "sample_id": "kos28/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos29",
+      "sample_id": "kos29/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos30",
+      "sample_id": "kos30/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos31",
+      "sample_id": "kos31/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos32",
+      "sample_id": "kos32/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos33",
+      "sample_id": "kos33/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos34",
+      "sample_id": "kos34/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos35",
+      "sample_id": "kos35/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos36",
+      "sample_id": "kos36/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos37",
+      "sample_id": "kos37/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos38",
+      "sample_id": "kos38/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos39",
+      "sample_id": "kos39/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos40",
+      "sample_id": "kos40/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos41",
+      "sample_id": "kos41/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos42",
+      "sample_id": "kos42/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos43",
+      "sample_id": "kos43/Part7",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos44",
+      "sample_id": "kos44/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos45",
+      "sample_id": "kos45/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part0",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part1",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part2",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part3",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part4",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part5",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part6",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos46",
+      "sample_id": "kos46/Part7",
+      "split": "detector_val"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part0",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part1",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part2",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part3",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part4",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part5",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part6",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos47",
+      "sample_id": "kos47/Part7",
+      "split": "calibration"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos48",
+      "sample_id": "kos48/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part0",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part1",
+      "split": "test"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part2",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part3",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part4",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part5",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part6",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos49",
+      "sample_id": "kos49/Part7",
+      "split": "test"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part0",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part1",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part2",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part3",
+      "split": "train"
+    },
+    {
+      "has_defect": 1,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part4",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part5",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part6",
+      "split": "train"
+    },
+    {
+      "has_defect": 0,
+      "part_id": "kos50",
+      "sample_id": "kos50/Part7",
+      "split": "train"
+    }
+  ],
+  "seed": 20260725,
+  "version": 4
+}

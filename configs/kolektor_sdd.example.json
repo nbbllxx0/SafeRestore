@@ -1,0 +1,10 @@
+{
+  "name": "kolektor_sdd",
+  "source_url": "https://www.vicos.si/resources/kolektorsdd",
+  "local_root": "../data/raw/kolektor_sdd/dataset",
+  "license_id": "CC-BY-NC-SA-4.0",
+  "license_verified": true,
+  "read_only": true,
+  "split_scheme": "official fold 0 test; remaining items split into train, detector validation, and calibration",
+  "inventory_sha256": "65DC621693418585DE9C4467D1340EA7958A6181816F0DC2883A1E8B61F9D4DC"
+}

@@ -1,0 +1,8 @@
+{
+  "anchors": [
+    {
+      "path": "../external_project/path/to/protected_file",
+      "sha256": "REPLACE_WITH_SHA256"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "carinthia_s",
+  "source_url": "https://zenodo.org/records/16895427",
+  "local_root": "../data/raw/carinthia_s/data/data",
+  "license_id": "CC-BY-4.0",
+  "license_verified": true,
+  "read_only": true,
+  "split_scheme": "frozen hash split; rare classes 1/2/5 reserved for shift",
+  "inventory_sha256": "EBC4B2CE5F88E4A38DAACC57E70CD2F58B4522420591B9063E99CC09FA141DCB"
+}

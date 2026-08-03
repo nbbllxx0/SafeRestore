@@ -1,0 +1,10 @@
+{
+  "name": "mvtec_ad_2",
+  "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2",
+  "local_root": "../data/mvtec_ad_2",
+  "license_id": "CC-BY-NC-SA-4.0",
+  "license_verified": true,
+  "read_only": true,
+  "split_scheme": "official train/validation/public-test/private-server",
+  "inventory_sha256": null
+}
