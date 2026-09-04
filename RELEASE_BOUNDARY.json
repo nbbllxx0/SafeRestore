@@ -1,0 +1,20 @@
+{
+  "raw_dataset_binaries_included": false,
+  "model_checkpoints_included": true,
+  "rendered_imagery_figures_included": false,
+  "absolute_local_manifests_included": false,
+  "analysis_status": "retrospective split-sample five-repetition evaluation; not preregistered",
+  "authoritative_result": "experiments/v4_reported_analysis_primary/summary.json",
+  "statistical_unit": "one image",
+  "model_seeds": [
+    201,
+    203,
+    207,
+    211,
+    223
+  ],
+  "primary_evidence_loss_recall_floor": 0.25,
+  "evidence_loss_population": "accepted positive images",
+  "excess_activation_population": "all accepted images",
+  "note": "Per-image candidate records, aggregate summaries, trained model checkpoints, and source CSVs for all quantitative figures are included. Dataset imagery and rendered imagery-figure PDFs/PNGs are not included."
+}

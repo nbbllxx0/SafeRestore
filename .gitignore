@@ -7,6 +7,5 @@ dist/
 *.egg-info/
 configs/*.local.json
 
-# analysis inputs/outputs are distributed with the preprint, not versioned here
-experiments/
-paper/
+# Rendered figures may contain dataset pixels; keep only the source CSVs.
+paper/figure_outputs/

@@ -1,0 +1,9 @@
+panel,population,class_label,sample_id,split,display,mask_pixels,roi_x0,roi_y0,roi_x1,roi_y1
+a,Nominal pit morphology,4,22e4c1a4e8aa4599ab8d5b52a42b68b2,test,reference_full,14502,1,25,206,230
+a,Nominal pit morphology,4,22e4c1a4e8aa4599ab8d5b52a42b68b2,test,severe_full,14502,1,25,206,230
+a,Nominal pit morphology,4,22e4c1a4e8aa4599ab8d5b52a42b68b2,test,reference_roi,14502,1,25,206,230
+a,Nominal pit morphology,4,22e4c1a4e8aa4599ab8d5b52a42b68b2,test,severe_roi,14502,1,25,206,230
+b,Reserved ridge morphology,1,4beeb8dfc4df4dceb7eb1d850a87923e,shift_test,reference_full,24163,0,0,256,256
+b,Reserved ridge morphology,1,4beeb8dfc4df4dceb7eb1d850a87923e,shift_test,severe_full,24163,0,0,256,256
+b,Reserved ridge morphology,1,4beeb8dfc4df4dceb7eb1d850a87923e,shift_test,reference_roi,24163,0,0,256,256
+b,Reserved ridge morphology,1,4beeb8dfc4df4dceb7eb1d850a87923e,shift_test,severe_roi,24163,0,0,256,256

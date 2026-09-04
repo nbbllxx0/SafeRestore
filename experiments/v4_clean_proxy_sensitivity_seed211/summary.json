@@ -1,0 +1,9 @@
+{
+  "note": "Morphology clean-proxy sensitivity under a frozen certified gate. Proxy cleans are inpainted defect twins, not morphology-matched acquisition.",
+  "checkpoint": "experiments/v4_carinthia_primary_trainseed211",
+  "n_proxies": 80,
+  "certificate_passes": true,
+  "acceptance_rate": 0.475,
+  "invention_rate_among_accepted": 0.2631578947368421,
+  "invention_rate_all_proxies": 0.2875
+}

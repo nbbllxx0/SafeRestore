@@ -1,0 +1,106 @@
+{
+  "seed": 207,
+  "folder": "experiments/v4_carinthia_primary_trainseed207",
+  "all_action": {
+    "name": "action_pool",
+    "threshold": 3.287242508176354,
+    "certificate": {
+      "n": 329,
+      "accepted": 182,
+      "reviewed": 147,
+      "coverage": 0.5531914893617021,
+      "positive_n": 310,
+      "clean_n": 19,
+      "accepted_positive": 169,
+      "accepted_clean": 13,
+      "positive_coverage": 0.5451612903225806,
+      "clean_coverage": 0.6842105263157895,
+      "prevalence_standardized_coverage": {
+        "0.01": 0.6828200339558574,
+        "0.10": 0.6703056027164687,
+        "0.50": 0.6146859083191851
+      },
+      "deletion_denominator": 169,
+      "invention_denominator": 182,
+      "deletion_errors": 20,
+      "invention_errors": 21,
+      "deletion_risk": 0.11834319526627218,
+      "invention_risk": 0.11538461538461539,
+      "deletion_ucb": 0.1673055634129807,
+      "invention_ucb": 0.1618927126984597,
+      "passes": false
+    },
+    "test_coverage": 0.6322869955156951,
+    "deployable_coverage": 0.0,
+    "test_deletion_among_accepted": 0.1111111111111111,
+    "test_invention_among_accepted": 0.11702127659574468
+  },
+  "entropy_raw": {
+    "name": "entropy_raw",
+    "threshold": -Infinity,
+    "certificate": {
+      "n": 329,
+      "accepted": 0,
+      "reviewed": 329,
+      "coverage": 0.0,
+      "positive_n": 310,
+      "clean_n": 19,
+      "accepted_positive": 0,
+      "accepted_clean": 0,
+      "positive_coverage": 0.0,
+      "clean_coverage": 0.0,
+      "prevalence_standardized_coverage": {
+        "0.01": 0.0,
+        "0.10": 0.0,
+        "0.50": 0.0
+      },
+      "deletion_denominator": 0,
+      "invention_denominator": 0,
+      "deletion_errors": 0,
+      "invention_errors": 0,
+      "deletion_risk": null,
+      "invention_risk": null,
+      "deletion_ucb": 1.0,
+      "invention_ucb": 1.0,
+      "passes": false
+    },
+    "test_coverage": 0.0,
+    "deployable_coverage": 0.0,
+    "test_deletion_among_accepted": null,
+    "test_invention_among_accepted": null
+  },
+  "oracle": {
+    "name": "oracle",
+    "threshold": 1.0,
+    "certificate": {
+      "n": 329,
+      "accepted": 329,
+      "reviewed": 0,
+      "coverage": 1.0,
+      "positive_n": 310,
+      "clean_n": 19,
+      "accepted_positive": 310,
+      "accepted_clean": 19,
+      "positive_coverage": 1.0,
+      "clean_coverage": 1.0,
+      "prevalence_standardized_coverage": {
+        "0.01": 1.0,
+        "0.10": 1.0,
+        "0.50": 1.0
+      },
+      "deletion_denominator": 310,
+      "invention_denominator": 329,
+      "deletion_errors": 88,
+      "invention_errors": 7,
+      "deletion_risk": 0.2838709677419355,
+      "invention_risk": 0.02127659574468085,
+      "deletion_ucb": 0.32904020198119116,
+      "invention_ucb": 0.039591009871615845,
+      "passes": false
+    },
+    "test_coverage": 1.0,
+    "deployable_coverage": 0.0,
+    "test_deletion_among_accepted": 0.1930232558139535,
+    "test_invention_among_accepted": 0.033632286995515695
+  }
+}

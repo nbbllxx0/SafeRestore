@@ -25,21 +25,20 @@ Shaoliang Yang and Jun Wang, Santa Clara University.
 
 ## Scope of this repository
 
-**Code only.** This repository holds the analysis and figure-generation source,
-the `saferestore` package, the regression tests, the deterministic split
-manifests, and dataset manifest examples.
+This repository holds the analysis and figure-generation source, the
+`saferestore` package, the regression tests, the deterministic split
+manifests, dataset manifest examples, archived image–action records,
+certification summaries, compact detector and restorer checkpoints, and
+the figure and table source CSVs used in the preprint.
 
 It deliberately does **not** contain:
 
-- per-image or per-action record tables;
-- trained detector or restorer checkpoints;
-- rendered figures or figure/table source tables;
-- any dataset imagery.
+- any dataset imagery (Carinthia-S or KolektorSDD);
+- rendered imagery figures (PDF/PNG under `paper/figure_outputs/`).
 
-Those are distributed as the reproducibility archive that accompanies the
-preprint as ancillary material. Carinthia-S and KolektorSDD themselves are
-distributed by their original authors under their own licenses and are not
-redistributed anywhere in this project.
+Carinthia-S and KolektorSDD themselves are distributed by their original
+authors under their own licenses and are not redistributed anywhere in this
+project.
 
 ## Main empirical result
 
@@ -64,11 +63,15 @@ adaptive-policy superiority or external-domain readiness.
 
 - `src/saferestore/` — degradation schedule, restoration actions, detector and
   restorer models, metrics, scores, certification;
-- `scripts/` — analysis driver, ablations, and the generators for the
-  statistical figures;
+- `scripts/` — analysis driver, ablations, and the generators for all ten
+  figures;
 - `tests/` — regression tests for splits, metrics, scores, and certification;
 - `splits/` — deterministic split manifests (image identifiers and roles);
-- `configs/` — dataset manifest examples.
+- `configs/` — dataset manifest examples;
+- `experiments/` — image–action records, certification summaries, and compact
+  checkpoints;
+- `paper/figure_sources/` — source CSVs for the ten preprint figures;
+- `paper/table_sources/` — source CSVs for reported tables.
 
 ## Environment
 
@@ -82,9 +85,8 @@ The tests run without any dataset present.
 
 ## Reproducing the analysis
 
-The analysis reads archived image–action records rather than raw imagery. Fetch
-the reproducibility archive distributed with the preprint, unpack its
-`experiments/` directory beside this checkout, then:
+The analysis reads archived image–action records rather than raw imagery. Those
+records are already in `experiments/` in this checkout:
 
 ```powershell
 py -3.12 -m scripts.run_reported_analysis --seeds 201 203 207 211 223 `
@@ -101,12 +103,20 @@ py -3.12 -m scripts.make_result_figures             # Figures 5, 6, 7, 9, 10
 ```
 
 Both run from the archived records alone; pass `--output-dir` to choose where
-they land.
+they land. Rendered outputs go to `paper/figure_outputs/` (gitignored).
 
-The generators for the remaining figures are not part of this release. Figure 1
-is a hand-specified schematic that encodes no data, and Figures 2, 3, and 8
-render Carinthia-S imagery, which is not redistributed here. Their published
-outputs and source tables ship with the reproducibility archive instead.
+The remaining figures:
+
+```powershell
+py -3.12 -m scripts.make_concept_figure             # Figure 1
+py -3.12 -m scripts.make_study_design_figure        # Figure 2
+py -3.12 -m scripts.make_domain_shift_figure        # Figure 3
+py -3.12 -m scripts.make_qualitative_cases          # Figure 8
+```
+
+Figure 1 is a schematic that encodes no data. Figures 2, 3, and 8 render
+Carinthia-S imagery, which is not redistributed here; they need a local
+Carinthia-S copy via `configs/carinthia_s.local.json` or `--data-root`.
 
 ## Record field names
 
@@ -136,8 +146,16 @@ model, operating point, or numerical result with it.
 
 ## Citation
 
-The arXiv identifier and a BibTeX entry will be added when the preprint is
-announced.
+[arXiv:2609.03475](https://arxiv.org/abs/2609.03475)
+
+```bibtex
+@article{yang2026saferestore,
+  title={{SafeRestore}: Detector-Relative Risk Certificates for Selective Industrial Image Restoration},
+  author={Yang, Shaoliang and Wang, Jun},
+  journal={arXiv preprint arXiv:2609.03475},
+  year={2026}
+}
+```
 
 ## License
 

@@ -1,0 +1,14 @@
+group,policy,certificates_passed,repetitions,conditional_test_coverage_percent,pass_gated_test_coverage_percent,pass_gated_test_coverage_sd
+fixed action,Raw,2,5,41.256,16.682,22.909
+fixed action,Bilinear,2,5,51.704,17.354,23.907
+fixed action,Bicubic,3,5,46.682,23.274,22.179
+fixed action,Smoothed bicubic,2,5,51.39,17.489,24.05
+fixed action,Sharpened bicubic,1,5,44.709,7.937,17.748
+fixed action,Learned,0,5,12.287,0.0,0.0
+adaptive pool,Restoration-only pool,0,5,35.471,0.0,0.0
+adaptive pool,All-action policy,1,5,34.395,12.018,26.873
+simplification,Remove consistency feature,3,5,42.96,24.574,24.93
+simplification,Interpolation-only pool,3,5,48.655,25.247,23.562
+simplification,Remove learned action,2,5,50.09,18.341,25.389
+simplification,Remove raw action,0,5,35.471,0.0,0.0
+simplification,Learned action only,0,5,12.287,0.0,0.0

@@ -1,0 +1,10 @@
+record_type,name,sample_id,blur_sigma,noise_std,count
+example,reference,2efea7a24d684a84acde1db1a9b94aec,,,
+degradation,mild,2efea7a24d684a84acde1db1a9b94aec,0.6,0.01,
+degradation,moderate,2efea7a24d684a84acde1db1a9b94aec,1.2,0.025,
+degradation,severe,2efea7a24d684a84acde1db1a9b94aec,2.0,0.045,
+split,calibration,,,,461
+split,detector_val,,,,431
+split,shift_test,,,,67
+split,test,,,,446
+split,train,,,,3186

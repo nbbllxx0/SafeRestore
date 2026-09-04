@@ -1,0 +1,116 @@
+{
+  "note": "Feature and action-pool ablations use the same deterministic tune/certify partition, positive-only evidence-loss fitting, and minimax action selection as the reported analysis. The full-feature/all-action condition must match the primary result before component comparisons.",
+  "tune_key": "v4tunecert",
+  "deletion_floor": 0.25,
+  "deletion_target": 0.15,
+  "invention_target": 0.15,
+  "delta": 0.1,
+  "margin": 0.5,
+  "rows": [
+    {
+      "ablation_type": "feature",
+      "variant": "full",
+      "certificate_passes": 1,
+      "coverage_mean": 0.12017937219730941,
+      "coverage_sd": 0.26872924572643214
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_consistency",
+      "certificate_passes": 3,
+      "coverage_mean": 0.24573991031390136,
+      "coverage_sd": 0.24930073736043107
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_disagreement",
+      "certificate_passes": 2,
+      "coverage_mean": 0.20538116591928252,
+      "coverage_sd": 0.2823714865523507
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_entropy",
+      "certificate_passes": 2,
+      "coverage_mean": 0.16457399103139014,
+      "coverage_sd": 0.23048193163628794
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_evidence_shift",
+      "certificate_passes": 2,
+      "coverage_mean": 0.20538116591928252,
+      "coverage_sd": 0.28423472418249063
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_probability_area",
+      "certificate_passes": 0,
+      "coverage_mean": 0.0,
+      "coverage_sd": 0.0
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "no_residual",
+      "certificate_passes": 2,
+      "coverage_mean": 0.10896860986547086,
+      "coverage_sd": 0.1637201245822495
+    },
+    {
+      "ablation_type": "feature",
+      "variant": "uncertainty_only",
+      "certificate_passes": 2,
+      "coverage_mean": 0.16502242152466368,
+      "coverage_sd": 0.28066608649859814
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "all",
+      "certificate_passes": 1,
+      "coverage_mean": 0.12017937219730941,
+      "coverage_sd": 0.26872924572643214
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "interpolation_only",
+      "certificate_passes": 3,
+      "coverage_mean": 0.25246636771300446,
+      "coverage_sd": 0.2356159814351212
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "learned_only",
+      "certificate_passes": 0,
+      "coverage_mean": 0.0,
+      "coverage_sd": 0.0
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "no_learned",
+      "certificate_passes": 2,
+      "coverage_mean": 0.18340807174887894,
+      "coverage_sd": 0.25389047881668786
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "no_raw",
+      "certificate_passes": 0,
+      "coverage_mean": 0.0,
+      "coverage_sd": 0.0
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "no_sharpening",
+      "certificate_passes": 2,
+      "coverage_mean": 0.2103139013452915,
+      "coverage_sd": 0.293432575742139
+    },
+    {
+      "ablation_type": "pool",
+      "variant": "no_smoothing",
+      "certificate_passes": 1,
+      "coverage_mean": 0.1242152466367713,
+      "coverage_sd": 0.27775373532172276
+    }
+  ]
+}

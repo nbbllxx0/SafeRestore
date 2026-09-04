@@ -1,0 +1,9 @@
+panel,step,node
+selection,1,observation
+selection,2,candidate displays
+selection,3,fitted ranking scores
+selection,4,selected display and fixed gate
+certification,1,threshold tuning
+certification,2,held-out certification sets
+certification,3,separate exact upper bounds
+certification,4,pass or review
