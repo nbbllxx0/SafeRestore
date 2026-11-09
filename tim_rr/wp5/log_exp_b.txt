@@ -1,0 +1,11 @@
+done carinthia_s 201
+done carinthia_s 203
+done carinthia_s 207
+done carinthia_s 211
+done carinthia_s 223
+done kolektor_sdd2 201
+done kolektor_sdd2 203
+done kolektor_sdd2 207
+done kolektor_sdd2 211
+done kolektor_sdd2 223
+wrote exp_b_*

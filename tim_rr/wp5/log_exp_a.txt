@@ -1,0 +1,93 @@
+{
+  "201": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.1285010363413007,
+    "alpha_star_policy": "restoration_pool",
+    "alpha_star_ties": [
+      "restoration_pool",
+      "action_pool"
+    ]
+  },
+  "203": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.14409039131834475,
+    "alpha_star_policy": "learned",
+    "alpha_star_ties": [
+      "learned"
+    ]
+  },
+  "207": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.27762240107749386,
+    "alpha_star_policy": "unsharp_bicubic",
+    "alpha_star_ties": [
+      "unsharp_bicubic"
+    ]
+  },
+  "211": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.17612071060451798,
+    "alpha_star_policy": "smooth_bicubic",
+    "alpha_star_ties": [
+      "smooth_bicubic"
+    ]
+  },
+  "223": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.16473473302405442,
+    "alpha_star_policy": "bilinear",
+    "alpha_star_ties": [
+      "bilinear"
+    ]
+  },
+  "seed201_qualification_raw_incidence": {
+    "positive": "1/109",
+    "clean": "32/495"
+  }
+}
+done 0 201
+done 0 203
+done 0 207
+done 0 211
+done 0 223
+done 2 201
+done 2 203
+done 2 207
+done 2 211
+done 2 223
+done 4 201
+done 4 203
+done 4 207
+done 4 211
+done 4 223
+done 6 201
+done 6 203
+done 6 207
+done 6 211
+done 6 223
+done 8 201
+done 8 203
+done 8 207
+done 8 211
+done 8 223
+done 12 201
+done 12 203
+done 12 207
+done 12 211
+done 12 223
+done 16 201
+done 16 203
+done 16 207
+done 16 211
+done 16 223
+wrote exp_a_*

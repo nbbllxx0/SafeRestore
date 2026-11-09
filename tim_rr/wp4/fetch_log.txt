@@ -1,0 +1,64 @@
+Bird: zip 15.51 GB, selected 2855 members, 3.03 GB, {'mask': 455, 'I07': 1200, 'I10': 1200}
+  Bird: 500/2855
+  Bird: 1000/2855
+  Bird: 1500/2855
+  Bird: 2000/2855
+  Bird: 2500/2855
+Bird: done (2855 fetched, 0 already present)
+Car: zip 16.32 GB, selected 2885 members, 3.17 GB, {'mask': 485, 'I07': 1200, 'I10': 1200}
+  Car: 500/2885
+  Car: 1000/2885
+  Car: 1500/2885
+  Car: 2000/2885
+  Car: 2500/2885
+Car: done (2885 fetched, 0 already present)
+Cube: zip 17.63 GB, selected 2953 members, 3.50 GB, {'mask': 553, 'I07': 1200, 'I10': 1200}
+  Cube: 500/2953
+  Cube: 1000/2953
+  Cube: 1500/2953
+  Cube: 2000/2953
+  Cube: 2500/2953
+Cube: done (2953 fetched, 0 already present)
+Dice: zip 16.68 GB, selected 2825 members, 3.32 GB, {'mask': 449, 'I07': 1188, 'I10': 1188}
+  Dice: 500/2825
+  Dice: 1000/2825
+  Dice: 1500/2825
+  Dice: 2000/2825
+  Dice: 2500/2825
+Dice: done (2825 fetched, 0 already present)
+Doll: zip 16.84 GB, selected 2901 members, 3.37 GB, {'mask': 501, 'I07': 1200, 'I10': 1200}
+  Doll: 500/2901
+  Doll: 1000/2901
+  Doll: 1500/2901
+  Doll: 2000/2901
+  Doll: 2500/2901
+Doll: done (2901 fetched, 0 already present)
+Holder: zip 17.47 GB, selected 2853 members, 3.45 GB, {'mask': 477, 'I07': 1188, 'I10': 1188}
+  Holder: 500/2853
+  Holder: 1000/2853
+  Holder: 1500/2853
+  Holder: 2000/2853
+  Holder: 2500/2853
+Holder: done (2853 fetched, 0 already present)
+Ring: zip 16.56 GB, selected 2948 members, 3.18 GB, {'mask': 548, 'I07': 1200, 'I10': 1200}
+  Ring: 500/2948
+  Ring: 1000/2948
+  Ring: 1500/2948
+  Ring: 2000/2948
+  Ring: 2500/2948
+Ring: done (2948 fetched, 0 already present)
+Teapot: zip 15.76 GB, selected 2907 members, 3.03 GB, {'mask': 507, 'I07': 1200, 'I10': 1200}
+  Teapot: 500/2907
+  Teapot: 1000/2907
+  Teapot: 1500/2907
+  Teapot: 2000/2907
+  Teapot: 2500/2907
+Teapot: done (2907 fetched, 0 already present)
+Tube: zip 16.71 GB, selected 2905 members, 3.27 GB, {'mask': 505, 'I07': 1200, 'I10': 1200}
+  Tube: 500/2905
+  Tube: 1000/2905
+  Tube: 1500/2905
+  Tube: 2000/2905
+  Tube: 2500/2905
+Tube: done (2905 fetched, 0 already present)
+TOTAL selected 29.32 GB

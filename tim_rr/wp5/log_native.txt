@@ -1,0 +1,10 @@
+carinthia_s 201 17s
+carinthia_s 203 16s
+carinthia_s 207 16s
+carinthia_s 211 16s
+carinthia_s 223 16s
+kolektor_sdd2 201 87s
+kolektor_sdd2 203 87s
+kolektor_sdd2 207 80s
+kolektor_sdd2 211 131s
+kolektor_sdd2 223 99s

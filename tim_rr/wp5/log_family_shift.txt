@@ -1,0 +1,62 @@
+inference 201 1s
+inference 203 0s
+inference 207 0s
+inference 211 0s
+inference 223 0s
+{
+  "201": {
+    "records_exact": true,
+    "label_mismatches": 0,
+    "rows": 2676,
+    "portfolio_test_identical_to_definitive": true,
+    "definitive": {
+      "coverage": 0.3968609865470852,
+      "deletion_risk": 0.07784431137724551,
+      "invention_risk": 0.005649717514124294
+    }
+  },
+  "203": {
+    "records_exact": true,
+    "label_mismatches": 0,
+    "rows": 2676,
+    "portfolio_test_identical_to_definitive": true,
+    "definitive": {
+      "coverage": 0.4349775784753363,
+      "deletion_risk": 0.08695652173913043,
+      "invention_risk": 0.010309278350515464
+    }
+  },
+  "207": {
+    "records_exact": true,
+    "label_mismatches": 0,
+    "rows": 2676,
+    "portfolio_test_identical_to_definitive": true,
+    "definitive": {
+      "coverage": 0.4080717488789238,
+      "deletion_risk": 0.05813953488372093,
+      "invention_risk": 0.054945054945054944
+    }
+  },
+  "211": {
+    "records_exact": true,
+    "label_mismatches": 0,
+    "rows": 2676,
+    "portfolio_test_identical_to_definitive": true,
+    "definitive": {
+      "coverage": 0.5291479820627802,
+      "deletion_risk": 0.08482142857142858,
+      "invention_risk": 0.01694915254237288
+    }
+  },
+  "223": {
+    "records_exact": true,
+    "label_mismatches": 0,
+    "rows": 2676,
+    "portfolio_test_identical_to_definitive": true,
+    "definitive": {
+      "coverage": 0.484304932735426,
+      "deletion_risk": 0.05825242718446602,
+      "invention_risk": 0.013888888888888888
+    }
+  }
+}

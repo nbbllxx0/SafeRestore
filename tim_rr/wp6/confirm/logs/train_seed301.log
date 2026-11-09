@@ -1,0 +1,17 @@
+seed 301: 3600 train / 1680 val views in 76s
+photometric {'gain': 1.9754315018608302, 'gamma': 0.5737869427675893, 'm07': 0.20244392354694868, 'm10': 0.3999141039349479}
+detector {'step': 2000, 'loss': 1.0853891372680664, 'val_positive_dice_I10': 0.05455619634296851, 'minutes': 2.8}
+detector {'step': 4000, 'loss': 1.0792899131774902, 'val_positive_dice_I10': 0.14743342428258316, 'minutes': 5.8}
+detector {'step': 6000, 'loss': 1.1154484748840332, 'val_positive_dice_I10': 0.1604095519873418, 'minutes': 8.6}
+detector {'step': 8000, 'loss': 1.1519606113433838, 'val_positive_dice_I10': 0.26690336549490706, 'minutes': 11.5}
+detector {'step': 10000, 'loss': 1.0159778594970703, 'val_positive_dice_I10': 0.24262705711936627, 'minutes': 14.3}
+detector {'step': 12000, 'loss': 0.903457760810852, 'val_positive_dice_I10': 0.27657957107928033, 'minutes': 16.9}
+detector {'step': 14000, 'loss': 0.9720215797424316, 'val_positive_dice_I10': 0.30572480767686006, 'minutes': 19.6}
+detector {'step': 16000, 'loss': 0.9253197908401489, 'val_positive_dice_I10': 0.38304954484618225, 'minutes': 22.3}
+detector {'step': 18000, 'loss': 0.8580644130706787, 'val_positive_dice_I10': 0.38205201904149083, 'minutes': 24.9}
+detector {'step': 20000, 'loss': 0.9683699607849121, 'val_positive_dice_I10': 0.4116453239565493, 'minutes': 27.6}
+detector {'step': 22000, 'loss': 0.7981396317481995, 'val_positive_dice_I10': 0.42200320100426675, 'minutes': 30.2}
+detector {'step': 24000, 'loss': 0.8234255909919739, 'val_positive_dice_I10': 0.4219352342676853, 'minutes': 32.9}
+tau = 0.99641
+enhancer {'step': 2000, 'loss': 0.04008340463042259, 'val_fg_l1': 0.07672210782766342, 'minutes': 2.6}
+enhancer {'step': 4000, 'loss': 0.029287217184901237, 'val_fg_l1': 0.06724604219198227, 'minutes': 5.2}

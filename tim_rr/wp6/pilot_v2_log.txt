@@ -1,0 +1,43 @@
+loaded 3600 train / 1680 val views (679 positive) in 106s
+train-role I10/I07 foreground mean ratio (gain) = 1.975
+{'step': 1000, 'loss': 1.2207051515579224, 'val_positive_dice_I10': 0.029548914282032667, 'minutes': 2.8}
+{'step': 2000, 'loss': 1.0510621070861816, 'val_positive_dice_I10': 0.06239842541231326, 'minutes': 5.6}
+{'step': 3000, 'loss': 1.1805719137191772, 'val_positive_dice_I10': 0.09633665862602396, 'minutes': 7.5}
+{'step': 4000, 'loss': 1.1287692785263062, 'val_positive_dice_I10': 0.14510311681252758, 'minutes': 8.9}
+{'step': 5000, 'loss': 1.0977522134780884, 'val_positive_dice_I10': 0.18321920912067086, 'minutes': 10.3}
+{'step': 6000, 'loss': 0.9718797206878662, 'val_positive_dice_I10': 0.17701283070878182, 'minutes': 11.7}
+{'step': 7000, 'loss': 0.9100026488304138, 'val_positive_dice_I10': 0.22703629363606836, 'minutes': 13.1}
+{'step': 8000, 'loss': 1.0405327081680298, 'val_positive_dice_I10': 0.26680851060991, 'minutes': 14.6}
+{'step': 9000, 'loss': 0.8801730275154114, 'val_positive_dice_I10': 0.2806300558550934, 'minutes': 16.0}
+{'step': 10000, 'loss': 0.8586245775222778, 'val_positive_dice_I10': 0.29093436514492815, 'minutes': 17.5}
+{'step': 11000, 'loss': 0.8331054449081421, 'val_positive_dice_I10': 0.308477804938981, 'minutes': 18.9}
+{'step': 12000, 'loss': 1.042042851448059, 'val_positive_dice_I10': 0.3065716960665643, 'minutes': 20.4}
+pixel threshold tau = 0.9986
+I10_raw {"positive_views": 679, "evidence_loss_rate": 0.4521354933726068, "evidence_loss_rate_detectable_both": 0.4098639455782313, "median_recall": 0.3111111111111111, "excess_activation_rate": 0.1375, "all_views": 1680, "loss_rate_by_category": {"Bird": 0.321, "Car": 0.909, "Cube": 0.551, "Dice": 0.491, "Doll": 0.562, "Holder": 0.514, "Motor": 0.405, "Ring": 0.096, "Teapot": 0.27, "Tube": 0.417}}
+I07_raw {"positive_views": 679, "evidence_loss_rate": 0.7245949926362297, "evidence_loss_rate_detectable_both": 0.6870748299319728, "median_recall": 0.0007017543859649122, "excess_activation_rate": 0.2, "all_views": 1680, "loss_rate_by_category": {"Bird": 0.375, "Car": 1.0, "Cube": 0.957, "Dice": 0.962, "Doll": 0.74, "Holder": 0.857, "Motor": 0.69, "Ring": 0.438, "Teapot": 0.317, "Tube": 0.889}}
+I07_gain {"positive_views": 679, "evidence_loss_rate": 0.7997054491899853, "evidence_loss_rate_detectable_both": 0.7721088435374149, "median_recall": 0.0, "excess_activation_rate": 0.13095238095238096, "all_views": 1680, "loss_rate_by_category": {"Bird": 0.357, "Car": 1.0, "Cube": 0.986, "Dice": 0.962, "Doll": 0.904, "Holder": 0.914, "Motor": 0.679, "Ring": 0.795, "Teapot": 0.333, "Tube": 1.0}}
+Traceback (most recent call last):
+  File "E:\Codex\WAFER\SafeRestore\tim_rr\wp6\pilot_v2.py", line 275, in <module>
+    main()
+  File "E:\Codex\WAFER\SafeRestore\tim_rr\wp6\pilot_v2.py", line 234, in main
+    probs = probs10 if name == "I10_raw" else predict(model, [fn(d) for d in vdata], device)
+                                                              ^^^^^
+  File "E:\Codex\WAFER\SafeRestore\tim_rr\wp6\pilot_v2.py", line 229, in <lambda>
+    "I07_clahe": lambda d: (equalize_adapthist(d["I07"], clip_limit=0.01) * 255).astype(np.uint8),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YSL0\anaconda3\envs\torch5090\Lib\site-packages\skimage\color\adapt_rgb.py", line 39, in image_filter_adapted
+    return apply_to_rgb(image_filter, image, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YSL0\anaconda3\envs\torch5090\Lib\site-packages\skimage\color\adapt_rgb.py", line 65, in hsv_value
+    return color.hsv2rgb(hsv)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YSL0\anaconda3\envs\torch5090\Lib\site-packages\skimage\_shared\utils.py", line 587, in fixed_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YSL0\anaconda3\envs\torch5090\Lib\site-packages\skimage\color\colorconv.py", line 408, in hsv2rgb
+    np.stack((p, v, t), axis=-1),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YSL0\anaconda3\envs\torch5090\Lib\site-packages\numpy\_core\shape_base.py", line 465, in stack
+    return _nx.concatenate(expanded_arrays, axis=axis, out=out,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 24.0 MiB for an array with shape (1024, 1024, 3) and data type float64
