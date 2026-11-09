@@ -1,0 +1,530 @@
+{
+  "ascending": {
+    "carinthia_s": [
+      {
+        "seed": 201,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "restoration_pool",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      }
+    ],
+    "kolektor_sdd2": [
+      {
+        "seed": 201,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      }
+    ]
+  },
+  "margin_raw": {
+    "carinthia_s": [
+      {
+        "seed": 201,
+        "portfolio_selected": "unsharp_bicubic",
+        "portfolio_test_coverage": 0.3430493273542601,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": "bilinear",
+        "portfolio_test_coverage": 0.4349775784753363,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": true,
+          "bicubic": false,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": "action_pool",
+        "portfolio_test_coverage": 0.4080717488789238,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": false,
+          "bicubic": true,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": "restoration_pool",
+        "portfolio_test_coverage": 0.5269058295964125,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": true,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "restoration_pool",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": "unsharp_bicubic",
+        "portfolio_test_coverage": 0.484304932735426,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": true
+      }
+    ],
+    "kolektor_sdd2": [
+      {
+        "seed": 201,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      }
+    ]
+  },
+  "margin_laplace": {
+    "carinthia_s": [
+      {
+        "seed": 201,
+        "portfolio_selected": "unsharp_bicubic",
+        "portfolio_test_coverage": 0.3968609865470852,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": "bilinear",
+        "portfolio_test_coverage": 0.4349775784753363,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": true,
+          "bicubic": false,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bilinear",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": "action_pool",
+        "portfolio_test_coverage": 0.4080717488789238,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": false,
+          "bicubic": true,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": "action_pool",
+        "portfolio_test_coverage": 0.5291479820627802,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": true,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "restoration_pool",
+        "tuning_selected_qualified": true
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": "unsharp_bicubic",
+        "portfolio_test_coverage": 0.484304932735426,
+        "single_policy_qualified": {
+          "raw_nearest": true,
+          "bilinear": true,
+          "bicubic": true,
+          "smooth_bicubic": true,
+          "unsharp_bicubic": true,
+          "learned": false,
+          "restoration_pool": true,
+          "action_pool": true
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": true
+      }
+    ],
+    "kolektor_sdd2": [
+      {
+        "seed": 201,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 203,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 207,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 211,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "smooth_bicubic",
+        "tuning_selected_qualified": false
+      },
+      {
+        "seed": 223,
+        "portfolio_selected": null,
+        "portfolio_test_coverage": null,
+        "single_policy_qualified": {
+          "raw_nearest": false,
+          "bilinear": false,
+          "bicubic": false,
+          "smooth_bicubic": false,
+          "unsharp_bicubic": false,
+          "learned": false,
+          "restoration_pool": false,
+          "action_pool": false
+        },
+        "tuning_selected": "unsharp_bicubic",
+        "tuning_selected_qualified": false
+      }
+    ]
+  }
+}

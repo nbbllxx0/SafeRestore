@@ -1,0 +1,15 @@
+domain,rule,qualified_reps,auto_acceptance_fi_mean,auto_acceptance_fi_min,auto_acceptance_fi_max,loss_rate_cond_mean,loss_rate_cond_range,activation_rate_cond_mean,activation_rate_cond_range,loss_per_test_positive_fi_mean,activation_per_test_image_fi_mean,cond_auto_acceptance_mean_qualified_only
+carinthia_s,Always acquired image (ungated),n/a (no qualification),1.0,1.0,1.0,0.48744186046511634,0.3837-0.5814,0.03497757847533632,0.0112-0.0673,0.48744186046511634,0.03497757847533632,
+carinthia_s,Always learned restore (ungated),n/a (no qualification),1.0,1.0,1.0,0.06651162790697675,0.0233-0.1326,0.5130044843049327,0.3004-0.7601,0.06651162790697675,0.5130044843049327,
+carinthia_s,"Acquired image, familywise gate (full delta)",4/5,0.2766816143497758,0.0,0.4641255605381166,0.051753839234080834,0.0000-0.0759,0.008377642888512454,0.0000-0.0227,0.014883720930232557,0.002242152466367713,0.34585201793721976
+carinthia_s,"Learned restore, familywise gate (full delta)",1/5,0.08968609865470853,0.0,0.4484304932735426,0.08947368421052632,0.0895-0.0895,0.1,0.1000-0.1000,0.007906976744186046,0.008968609865470852,0.4484304932735426
+carinthia_s,"Restoration-only pool, familywise gate (full delta; selection not licensed)",3/5,0.27757847533632285,0.0,0.5269058295964125,0.05495288548902371,0.0208-0.0852,0.02909423816808047,0.0147-0.0556,0.015348837209302324,0.007623318385650224,0.46263079222720477
+carinthia_s,"All-action pool, familywise gate (full delta)",3/5,0.27802690582959644,0.0,0.5291479820627802,0.051162426414874396,0.0105-0.0848,0.028915230878647558,0.0149-0.0549,0.014418604651162788,0.007623318385650224,0.4633781763826607
+carinthia_s,"Qualified selective rule (portfolio, delta/8 per policy)",5/5,0.4506726457399103,0.3968609865470852,0.5291479820627802,0.07320284475119829,0.0581-0.0870,0.02034841844819129,0.0056-0.0549,0.03255813953488372,0.008968609865470852,0.4506726457399103
+kolektor_sdd2,Always acquired image (ungated),n/a (no qualification),1.0,1.0,1.0,0.3727272727272727,0.3455-0.3909,0.04760956175298805,0.0209-0.0707,0.3727272727272727,0.04760956175298805,
+kolektor_sdd2,Always learned restore (ungated),n/a (no qualification),1.0,1.0,1.0,0.33272727272727276,0.2909-0.3727,0.09621513944223108,0.0428-0.1693,0.33272727272727276,0.09621513944223108,
+kolektor_sdd2,"Acquired image, familywise gate (full delta)",0/5,0.0,0.0,0.0,,,,,0.0,0.0,
+kolektor_sdd2,"Learned restore, familywise gate (full delta)",0/5,0.0,0.0,0.0,,,,,0.0,0.0,
+kolektor_sdd2,"Restoration-only pool, familywise gate (full delta; selection not licensed)",0/5,0.0,0.0,0.0,,,,,0.0,0.0,
+kolektor_sdd2,"All-action pool, familywise gate (full delta)",0/5,0.0,0.0,0.0,,,,,0.0,0.0,
+kolektor_sdd2,"Qualified selective rule (portfolio, delta/8 per policy)",0/5,0.0,0.0,0.0,,,,,0.0,0.0,

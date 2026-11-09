@@ -1,0 +1,130 @@
+{
+  "dataset": "mvtec_ad",
+  "seed": 403,
+  "detector_threshold": 0.9631624817848206,
+  "split_sha256": "2839d2c93829419d9acef18553c6fb5308c13d5ba39b32df13d9f481ffacd522",
+  "detector_history": [
+    {
+      "epoch": 1,
+      "loss": 2.039249639104052,
+      "validation_positive_dice": 0.1404061690490225
+    },
+    {
+      "epoch": 2,
+      "loss": 1.8695426754835176,
+      "validation_positive_dice": 0.13925938687649211
+    },
+    {
+      "epoch": 3,
+      "loss": 1.775316010161144,
+      "validation_positive_dice": 0.190611820127094
+    },
+    {
+      "epoch": 4,
+      "loss": 1.7117972065762777,
+      "validation_positive_dice": 0.2019537731236519
+    },
+    {
+      "epoch": 5,
+      "loss": 1.6511036337875737,
+      "validation_positive_dice": 0.2064145380871999
+    },
+    {
+      "epoch": 6,
+      "loss": 1.6612537709678092,
+      "validation_positive_dice": 0.21683935268180343
+    },
+    {
+      "epoch": 7,
+      "loss": 1.6324105531704136,
+      "validation_positive_dice": 0.19966830265366298
+    },
+    {
+      "epoch": 8,
+      "loss": 1.6051704211932858,
+      "validation_positive_dice": 0.19120618580110263
+    },
+    {
+      "epoch": 9,
+      "loss": 1.5741287743172994,
+      "validation_positive_dice": 0.19577694589806344
+    },
+    {
+      "epoch": 10,
+      "loss": 1.5727639494872674,
+      "validation_positive_dice": 0.14502344074989718
+    },
+    {
+      "epoch": 11,
+      "loss": 1.5618839133076552,
+      "validation_positive_dice": 0.19322988125014354
+    },
+    {
+      "epoch": 12,
+      "loss": 1.5777040339097743,
+      "validation_positive_dice": 0.1872188401494373
+    },
+    {
+      "epoch": 13,
+      "loss": 1.5186360783693267,
+      "validation_positive_dice": 0.22126197640593206
+    },
+    {
+      "epoch": 14,
+      "loss": 1.4859386755198967,
+      "validation_positive_dice": 0.2030845322889868
+    },
+    {
+      "epoch": 15,
+      "loss": 1.4816584249822105,
+      "validation_positive_dice": 0.23773718693838478
+    }
+  ],
+  "restorer_history": [
+    {
+      "epoch": 1,
+      "loss": 0.02876349300509546
+    },
+    {
+      "epoch": 2,
+      "loss": 0.025595708298156175
+    },
+    {
+      "epoch": 3,
+      "loss": 0.025204570257536522
+    },
+    {
+      "epoch": 4,
+      "loss": 0.023884162188666624
+    },
+    {
+      "epoch": 5,
+      "loss": 0.023546666504315486
+    }
+  ],
+  "settings": {
+    "root": "$MVTEC_AD_ROOT",
+    "split_file": "tim_rr/wp6/mvtec/splits/mvtec_rr_v1.json",
+    "output": "tim_rr/wp6/mvtec/runs/seed403",
+    "seed": "403",
+    "dataset": "kolektor_sdd2",
+    "detector_epochs": "15",
+    "restorer_epochs": "5",
+    "batch_size": "8",
+    "device": "cuda",
+    "corruption_key": "v4corr:eval",
+    "detector_family": "tiny_unet",
+    "restorer_family": "compact",
+    "detector_base": "32",
+    "restorer_channels": "32",
+    "restorer_blocks": "6",
+    "target_pixel_fpr": "0.001",
+    "deletion_recall_floor": "0.25",
+    "invention_fpr_limit": "0.002",
+    "risk_deletion": "0.15",
+    "risk_invention": "0.15",
+    "delta": "0.1",
+    "boundary_tolerance": "8"
+  },
+  "elapsed_seconds": 1255.3146047592163
+}

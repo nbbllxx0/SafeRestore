@@ -1,0 +1,2 @@
+{"train": {"Good": 150, "NG": 150}, "detector_val": {"Good": 70, "NG": 70}, "tuning": {"Good": 79, "NG": 79}, "holdout": {"Good": 200, "NG": 200}} 1b9670248da4f3bce9f3612e3d3da8bbe668355133d9823839f90674fcf127f3
+2026-10-25T11:54:42-07:00

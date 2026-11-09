@@ -1,0 +1,6146 @@
+{
+ "targets": {
+  "alpha_loss": 0.15,
+  "alpha_act": 0.15,
+  "delta": 0.1,
+  "r0": 0.25,
+  "min_accept": 15,
+  "min_positive_accept": 15
+ },
+ "policies": [
+  "raw_nearest",
+  "bilinear",
+  "bicubic",
+  "smooth_bicubic",
+  "unsharp_bicubic",
+  "learned",
+  "restoration_pool",
+  "action_pool"
+ ],
+ "reproduction": {
+  "carinthia_s": {
+   "portfolio_qualified": 5,
+   "single_fs": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    1,
+    3,
+    3
+   ],
+   "single_marginal": [
+    2,
+    2,
+    3,
+    2,
+    1,
+    0,
+    0,
+    1
+   ],
+   "single_fs_ascending": [
+    2,
+    3,
+    3,
+    2,
+    3,
+    0,
+    1,
+    2
+   ],
+   "portfolio_fs_ascending": 0,
+   "tuning_selected_qualified": 4,
+   "all_checks_pass": true
+  },
+  "kolektor_sdd2": {
+   "portfolio_qualified": 0,
+   "single_fs": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "single_marginal": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "single_fs_ascending": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "portfolio_fs_ascending": 0,
+   "tuning_selected_qualified": 0,
+   "all_checks_pass": true
+  }
+ },
+ "rows": {
+  "carinthia_s": [
+   {
+    "seed": 201,
+    "tuning_selected": "bilinear",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "fs_portfolio_threshold": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.261676432897304,
+        "n_qualified_gates": 28,
+        "test": {
+         "coverage": 0.39461883408071746,
+         "deletion_risk": 0.08433734939759036,
+         "invention_risk": 0.005681818181818182,
+         "accepted": 176,
+         "accepted_positive": 166
+        }
+       },
+       "bilinear": {
+        "threshold": 4.019635233786494,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.1,
+         "invention_risk": 0.005555555555555556,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "bicubic": {
+        "threshold": 4.6298358633667815,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.44170403587443946,
+         "deletion_risk": 0.12432432432432433,
+         "invention_risk": 0.0,
+         "accepted": 197,
+         "accepted_positive": 185
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.061298180919715,
+        "n_qualified_gates": 28,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.0935672514619883,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 171
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.808675320688103,
+        "n_qualified_gates": 29,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.12087912087912088,
+         "invention_risk": 0.005154639175257732,
+         "accepted": 194,
+         "accepted_positive": 182
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.808675320688103,
+       "n_qualified_pairs": 143,
+       "test": {
+        "coverage": 0.4349775784753363,
+        "deletion_risk": 0.12087912087912088,
+        "invention_risk": 0.005154639175257732,
+        "accepted": 194,
+        "accepted_positive": 182
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.251251915844611,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3923766816143498,
+         "deletion_risk": 0.08484848484848485,
+         "invention_risk": 0.005714285714285714,
+         "accepted": 175,
+         "accepted_positive": 165
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9701505842431373,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.08982035928143713,
+         "invention_risk": 0.005649717514124294,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "bicubic": {
+        "threshold": 4.436277355393103,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.0658682634730539,
+         "invention_risk": 0.0,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.05575323582691,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.0935672514619883,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 171
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.636827045941805,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.07784431137724551,
+         "invention_risk": 0.005649717514124294,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.636827045941805,
+       "n_qualified_pairs": 2,
+       "test": {
+        "coverage": 0.3968609865470852,
+        "deletion_risk": 0.07784431137724551,
+        "invention_risk": 0.005649717514124294,
+        "accepted": 177,
+        "accepted_positive": 167
+       }
+      }
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.8664565454509323,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.33183856502242154,
+         "deletion_risk": 0.043478260869565216,
+         "invention_risk": 0.006756756756756757,
+         "accepted": 148,
+         "accepted_positive": 138
+        }
+       },
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.618155845627463,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3071748878923767,
+         "deletion_risk": 0.023622047244094488,
+         "invention_risk": 0.0072992700729927005,
+         "accepted": 137,
+         "accepted_positive": 127
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.511426635721345,
+        "n_qualified_gates": 8,
+        "test": {
+         "coverage": 0.3834080717488789,
+         "deletion_risk": 0.062111801242236024,
+         "invention_risk": 0.005847953216374269,
+         "accepted": 171,
+         "accepted_positive": 161
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.8664565454509323,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.33183856502242154,
+         "deletion_risk": 0.043478260869565216,
+         "invention_risk": 0.006756756756756757,
+         "accepted": 148,
+         "accepted_positive": 138
+        }
+       },
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.618155845627463,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3071748878923767,
+         "deletion_risk": 0.023622047244094488,
+         "invention_risk": 0.0072992700729927005,
+         "accepted": 137,
+         "accepted_positive": 127
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.511426635721345,
+        "n_qualified_gates": 8,
+        "test": {
+         "coverage": 0.3834080717488789,
+         "deletion_risk": 0.062111801242236024,
+         "invention_risk": 0.005847953216374269,
+         "accepted": 171,
+         "accepted_positive": 161
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.157277936345642,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.0759493670886076,
+         "invention_risk": 0.005952380952380952,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "bilinear": {
+        "threshold": 3.861835113824345,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.3721973094170404,
+         "deletion_risk": 0.08333333333333333,
+         "invention_risk": 0.006024096385542169,
+         "accepted": 166,
+         "accepted_positive": 156
+        }
+       },
+       "bicubic": {
+        "threshold": 4.436277355393103,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.0658682634730539,
+         "invention_risk": 0.0,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8758831914701273,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.3654708520179372,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.006134969325153374,
+         "accepted": 163,
+         "accepted_positive": 153
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.636827045941805,
+       "n_qualified_pairs": 5,
+       "test": {
+        "coverage": 0.3968609865470852,
+        "deletion_risk": 0.07784431137724551,
+        "invention_risk": 0.005649717514124294,
+        "accepted": 177,
+        "accepted_positive": 167
+       }
+      }
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.157277936345642,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.0759493670886076,
+         "invention_risk": 0.005952380952380952,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9065475353635204,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.09146341463414634,
+         "invention_risk": 0.005747126436781609,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "bicubic": {
+        "threshold": 4.410364457717872,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.054878048780487805,
+         "invention_risk": 0.0,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.025691618043805,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.4013452914798206,
+         "deletion_risk": 0.09467455621301775,
+         "invention_risk": 0.00558659217877095,
+         "accepted": 179,
+         "accepted_positive": 169
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.636827045941805,
+       "n_qualified_pairs": 48,
+       "test": {
+        "coverage": 0.3968609865470852,
+        "deletion_risk": 0.07784431137724551,
+        "invention_risk": 0.005649717514124294,
+        "accepted": 177,
+        "accepted_positive": 167
+       }
+      }
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.157277936345642,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.0759493670886076,
+         "invention_risk": 0.005952380952380952,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9065475353635204,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.09146341463414634,
+         "invention_risk": 0.005747126436781609,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "bicubic": {
+        "threshold": 4.410364457717872,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.054878048780487805,
+         "invention_risk": 0.0,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.025691618043805,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.4013452914798206,
+         "deletion_risk": 0.09467455621301775,
+         "invention_risk": 0.00558659217877095,
+         "accepted": 179,
+         "accepted_positive": 169
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 3.9065475353635204,
+       "n_qualified_pairs": 13,
+       "test": {
+        "coverage": 0.3901345291479821,
+        "deletion_risk": 0.09146341463414634,
+        "invention_risk": 0.005747126436781609,
+        "accepted": 174,
+        "accepted_positive": 164
+       }
+      }
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.157277936345642,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.0759493670886076,
+         "invention_risk": 0.005952380952380952,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9065475353635204,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.09146341463414634,
+         "invention_risk": 0.005747126436781609,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "bicubic": {
+        "threshold": 4.410364457717872,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.054878048780487805,
+         "invention_risk": 0.0,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.547583708587073,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.2914798206278027,
+         "deletion_risk": 0.008333333333333333,
+         "invention_risk": 0.007692307692307693,
+         "accepted": 130,
+         "accepted_positive": 120
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.636827045941805,
+       "n_qualified_pairs": 48,
+       "test": {
+        "coverage": 0.3968609865470852,
+        "deletion_risk": 0.07784431137724551,
+        "invention_risk": 0.005649717514124294,
+        "accepted": 177,
+        "accepted_positive": 167
+       }
+      }
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.157277936345642,
+        "n_qualified_gates": 21,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.0759493670886076,
+         "invention_risk": 0.005952380952380952,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9065475353635204,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.09146341463414634,
+         "invention_risk": 0.005747126436781609,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "bicubic": {
+        "threshold": 4.410364457717872,
+        "n_qualified_gates": 20,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.054878048780487805,
+         "invention_risk": 0.0,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 2.9508538757987477,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.21748878923766815,
+         "deletion_risk": 0.011494252873563218,
+         "invention_risk": 0.0,
+         "accepted": 97,
+         "accepted_positive": 87
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.553860909327914,
+       "n_qualified_pairs": 29,
+       "test": {
+        "coverage": 0.3923766816143498,
+        "deletion_risk": 0.07272727272727272,
+        "invention_risk": 0.005714285714285714,
+        "accepted": 175,
+        "accepted_positive": 165
+       }
+      }
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 4.251251915844611,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.3923766816143498,
+         "deletion_risk": 0.08484848484848485,
+         "invention_risk": 0.005714285714285714,
+         "accepted": 175,
+         "accepted_positive": 165
+        }
+       },
+       "bilinear": {
+        "threshold": 3.9065475353635204,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.09146341463414634,
+         "invention_risk": 0.005747126436781609,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "bicubic": {
+        "threshold": 4.642320073855652,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.44170403587443946,
+         "deletion_risk": 0.12432432432432433,
+         "invention_risk": 0.0,
+         "accepted": 197,
+         "accepted_positive": 185
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.161197688785162,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.10674157303370786,
+         "invention_risk": 0.005319148936170213,
+         "accepted": 188,
+         "accepted_positive": 178
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.69457573602094,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.40582959641255606,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0055248618784530384,
+         "accepted": 181,
+         "accepted_positive": 170
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 4.636827045941805,
+       "n_qualified_pairs": 62,
+       "test": {
+        "coverage": 0.3968609865470852,
+        "deletion_risk": 0.07784431137724551,
+        "invention_risk": 0.005649717514124294,
+        "accepted": 177,
+        "accepted_positive": 167
+       }
+      }
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.9861863003439097,
+        "n_qualified_gates": 9,
+        "test": {
+         "coverage": 0.3452914798206278,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.006493506493506494,
+         "accepted": 154,
+         "accepted_positive": 144
+        }
+       },
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 4.346710802654336,
+        "n_qualified_gates": 8,
+        "test": {
+         "coverage": 0.3744394618834081,
+         "deletion_risk": 0.03821656050955414,
+         "invention_risk": 0.0,
+         "accepted": 167,
+         "accepted_positive": 157
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.7844321955025917,
+        "n_qualified_gates": 6,
+        "test": {
+         "coverage": 0.33856502242152464,
+         "deletion_risk": 0.03546099290780142,
+         "invention_risk": 0.006622516556291391,
+         "accepted": 151,
+         "accepted_positive": 141
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.636827045941805,
+        "n_qualified_gates": 14,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.07784431137724551,
+         "invention_risk": 0.005649717514124294,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 116,
+     "bilinear": 116,
+     "bicubic": 116,
+     "smooth_bicubic": 116,
+     "unsharp_bicubic": 116,
+     "learned": 118,
+     "restoration_pool": 116,
+     "action_pool": 116
+    },
+    "n_hold": 329,
+    "n_test": 446,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 5.031061795645424,
+      "test": {
+       "coverage": 0.547085201793722,
+       "deletion_risk": 0.29310344827586204,
+       "invention_risk": 0.004098360655737705,
+       "accepted": 244,
+       "accepted_positive": 232
+      }
+     },
+     "bilinear": {
+      "threshold": 4.7443924003105655,
+      "test": {
+       "coverage": 0.5807174887892377,
+       "deletion_risk": 0.2631578947368421,
+       "invention_risk": 0.007722007722007722,
+       "accepted": 259,
+       "accepted_positive": 247
+      }
+     },
+     "bicubic": {
+      "threshold": 5.0899953509816624,
+      "test": {
+       "coverage": 0.5448430493273543,
+       "deletion_risk": 0.26406926406926406,
+       "invention_risk": 0.00411522633744856,
+       "accepted": 243,
+       "accepted_positive": 231
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 4.847236356403118,
+      "test": {
+       "coverage": 0.5874439461883408,
+       "deletion_risk": 0.272,
+       "invention_risk": 0.007633587786259542,
+       "accepted": 262,
+       "accepted_positive": 250
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 5.2458266947001215,
+      "test": {
+       "coverage": 0.5426008968609866,
+       "deletion_risk": 0.27391304347826084,
+       "invention_risk": 0.004132231404958678,
+       "accepted": 242,
+       "accepted_positive": 230
+      }
+     },
+     "learned": {
+      "threshold": 3.8297602629601157,
+      "test": {
+       "coverage": 0.5695067264573991,
+       "deletion_risk": 0.003937007874015748,
+       "invention_risk": 0.2992125984251969,
+       "accepted": 254,
+       "accepted_positive": 254
+      }
+     },
+     "restoration_pool": {
+      "threshold": 3.9589681141080697,
+      "test": {
+       "coverage": 0.6681614349775785,
+       "deletion_risk": 0.027777777777777776,
+       "invention_risk": 0.23154362416107382,
+       "accepted": 298,
+       "accepted_positive": 288
+      }
+     },
+     "action_pool": {
+      "threshold": 3.9589681141080697,
+      "test": {
+       "coverage": 0.6681614349775785,
+       "deletion_risk": 0.027777777777777776,
+       "invention_risk": 0.23154362416107382,
+       "accepted": 298,
+       "accepted_positive": 288
+      }
+     }
+    }
+   },
+   {
+    "seed": 203,
+    "tuning_selected": "bilinear",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "fs_portfolio_threshold": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.6105763026476643,
+        "n_qualified_gates": 12,
+        "test": {
+         "coverage": 0.32062780269058294,
+         "deletion_risk": 0.06015037593984962,
+         "invention_risk": 0.013986013986013986,
+         "accepted": 143,
+         "accepted_positive": 133
+        }
+       },
+       "bilinear": {
+        "threshold": 4.113687332677513,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4461883408071749,
+         "deletion_risk": 0.09523809523809523,
+         "invention_risk": 0.010050251256281407,
+         "accepted": 199,
+         "accepted_positive": 189
+        }
+       },
+       "bicubic": {
+        "threshold": 3.335398463864996,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.27802690582959644,
+         "deletion_risk": 0.043859649122807015,
+         "invention_risk": 0.016129032258064516,
+         "accepted": 124,
+         "accepted_positive": 114
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.141662395858138,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 4.115344466091438,
+        "n_qualified_gates": 25,
+        "test": {
+         "coverage": 0.3744394618834081,
+         "deletion_risk": 0.07006369426751592,
+         "invention_risk": 0.011976047904191617,
+         "accepted": 167,
+         "accepted_positive": 157
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "smooth_bicubic",
+       "threshold": 4.141662395858138,
+       "n_qualified_pairs": 122,
+       "test": {
+        "coverage": 0.4439461883408072,
+        "deletion_risk": 0.10638297872340426,
+        "invention_risk": 0.005050505050505051,
+        "accepted": 198,
+        "accepted_positive": 188
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 3.5614401762802115,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.03571428571428571,
+         "invention_risk": 0.006666666666666667,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.378095019647222,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.32062780269058294,
+         "deletion_risk": 0.03759398496240601,
+         "invention_risk": 0.006993006993006993,
+         "accepted": 143,
+         "accepted_positive": 133
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 3.5614401762802115,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.03571428571428571,
+         "invention_risk": 0.006666666666666667,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.378095019647222,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.32062780269058294,
+         "deletion_risk": 0.03759398496240601,
+         "invention_risk": 0.006993006993006993,
+         "accepted": 143,
+         "accepted_positive": 133
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.088486689237104,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.437219730941704,
+         "deletion_risk": 0.0918918918918919,
+         "invention_risk": 0.010256410256410256,
+         "accepted": 195,
+         "accepted_positive": 185
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.877597864550763,
+        "n_qualified_gates": 5,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.07058823529411765,
+         "invention_risk": 0.005555555555555556,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.909171833138427,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.34977578475336324,
+         "deletion_risk": 0.06164383561643835,
+         "invention_risk": 0.01282051282051282,
+         "accepted": 156,
+         "accepted_positive": 146
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.05157613349175,
+       "n_qualified_pairs": 7,
+       "test": {
+        "coverage": 0.4304932735426009,
+        "deletion_risk": 0.08791208791208792,
+        "invention_risk": 0.010416666666666666,
+        "accepted": 192,
+        "accepted_positive": 182
+       }
+      }
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.083455576443894,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.010309278350515464,
+         "accepted": 194,
+         "accepted_positive": 184
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 4.143164710251569,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.083455576443894,
+       "n_qualified_pairs": 39,
+       "test": {
+        "coverage": 0.4349775784753363,
+        "deletion_risk": 0.08695652173913043,
+        "invention_risk": 0.010309278350515464,
+        "accepted": 194,
+        "accepted_positive": 184
+       }
+      }
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.083455576443894,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.010309278350515464,
+         "accepted": 194,
+         "accepted_positive": 184
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 4.143164710251569,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.083455576443894,
+       "n_qualified_pairs": 22,
+       "test": {
+        "coverage": 0.4349775784753363,
+        "deletion_risk": 0.08695652173913043,
+        "invention_risk": 0.010309278350515464,
+        "accepted": 194,
+        "accepted_positive": 184
+       }
+      }
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.083455576443894,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.010309278350515464,
+         "accepted": 194,
+         "accepted_positive": 184
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 4.143164710251569,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.909171833138427,
+        "n_qualified_gates": 12,
+        "test": {
+         "coverage": 0.34977578475336324,
+         "deletion_risk": 0.06164383561643835,
+         "invention_risk": 0.01282051282051282,
+         "accepted": 156,
+         "accepted_positive": 146
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.083455576443894,
+       "n_qualified_pairs": 39,
+       "test": {
+        "coverage": 0.4349775784753363,
+        "deletion_risk": 0.08695652173913043,
+        "invention_risk": 0.010309278350515464,
+        "accepted": 194,
+        "accepted_positive": 184
+       }
+      }
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.083455576443894,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.010309278350515464,
+         "accepted": 194,
+         "accepted_positive": 184
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 4.143164710251569,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.05157613349175,
+       "n_qualified_pairs": 28,
+       "test": {
+        "coverage": 0.4304932735426009,
+        "deletion_risk": 0.08791208791208792,
+        "invention_risk": 0.010416666666666666,
+        "accepted": 192,
+        "accepted_positive": 182
+       }
+      }
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.113687332677513,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4461883408071749,
+         "deletion_risk": 0.09523809523809523,
+         "invention_risk": 0.010050251256281407,
+         "accepted": 199,
+         "accepted_positive": 189
+        }
+       },
+       "bicubic": {
+        "threshold": 3.335398463864996,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.27802690582959644,
+         "deletion_risk": 0.043859649122807015,
+         "invention_risk": 0.016129032258064516,
+         "accepted": 124,
+         "accepted_positive": 114
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 4.141662395858138,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.083455576443894,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.010309278350515464,
+         "accepted": 194,
+         "accepted_positive": 184
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 4.143164710251569,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.10638297872340426,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 188
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 4.083455576443894,
+       "n_qualified_pairs": 39,
+       "test": {
+        "coverage": 0.4349775784753363,
+        "deletion_risk": 0.08695652173913043,
+        "invention_risk": 0.010309278350515464,
+        "accepted": 194,
+        "accepted_positive": 184
+       }
+      }
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 4.05157613349175,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.4304932735426009,
+         "deletion_risk": 0.08791208791208792,
+         "invention_risk": 0.010416666666666666,
+         "accepted": 192,
+         "accepted_positive": 182
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.6630447199449185,
+        "n_qualified_gates": 17,
+        "test": {
+         "coverage": 0.3542600896860987,
+         "deletion_risk": 0.05405405405405406,
+         "invention_risk": 0.006329113924050633,
+         "accepted": 158,
+         "accepted_positive": 148
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.099539280127088,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.23542600896860988,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01904761904761905,
+         "accepted": 105,
+         "accepted_positive": 95
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 116,
+     "bilinear": 116,
+     "bicubic": 116,
+     "smooth_bicubic": 116,
+     "unsharp_bicubic": 116,
+     "learned": 118,
+     "restoration_pool": 116,
+     "action_pool": 116
+    },
+    "n_hold": 329,
+    "n_test": 446,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 4.925875494193902,
+      "test": {
+       "coverage": 0.5739910313901345,
+       "deletion_risk": 0.2827868852459016,
+       "invention_risk": 0.01171875,
+       "accepted": 256,
+       "accepted_positive": 244
+      }
+     },
+     "bilinear": {
+      "threshold": 5.0061866559280945,
+      "test": {
+       "coverage": 0.6053811659192825,
+       "deletion_risk": 0.2364341085271318,
+       "invention_risk": 0.014814814814814815,
+       "accepted": 270,
+       "accepted_positive": 258
+      }
+     },
+     "bicubic": {
+      "threshold": 4.941230057509965,
+      "test": {
+       "coverage": 0.5964125560538116,
+       "deletion_risk": 0.2874015748031496,
+       "invention_risk": 0.011278195488721804,
+       "accepted": 266,
+       "accepted_positive": 254
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 5.029809172283663,
+      "test": {
+       "coverage": 0.6188340807174888,
+       "deletion_risk": 0.25,
+       "invention_risk": 0.018115942028985508,
+       "accepted": 276,
+       "accepted_positive": 264
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 5.137943794009229,
+      "test": {
+       "coverage": 0.5919282511210763,
+       "deletion_risk": 0.28174603174603174,
+       "invention_risk": 0.015151515151515152,
+       "accepted": 264,
+       "accepted_positive": 252
+      }
+     },
+     "learned": {
+      "threshold": 3.105719836558201,
+      "test": {
+       "coverage": 0.2062780269058296,
+       "deletion_risk": 0.0,
+       "invention_risk": 0.6086956521739131,
+       "accepted": 92,
+       "accepted_positive": 91
+      }
+     },
+     "restoration_pool": {
+      "threshold": 3.2653185263228646,
+      "test": {
+       "coverage": 0.4798206278026906,
+       "deletion_risk": 0.04411764705882353,
+       "invention_risk": 0.2336448598130841,
+       "accepted": 214,
+       "accepted_positive": 204
+      }
+     },
+     "action_pool": {
+      "threshold": 3.2653185263228646,
+      "test": {
+       "coverage": 0.4820627802690583,
+       "deletion_risk": 0.04878048780487805,
+       "invention_risk": 0.23255813953488372,
+       "accepted": 215,
+       "accepted_positive": 205
+      }
+     }
+    }
+   },
+   {
+    "seed": 207,
+    "tuning_selected": "smooth_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "fs_portfolio_threshold": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5510140601519766,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.26905829596412556,
+         "deletion_risk": 0.05454545454545454,
+         "invention_risk": 0.0,
+         "accepted": 120,
+         "accepted_positive": 110
+        }
+       },
+       "bilinear": {
+        "threshold": 5.973607837189172,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.6973094170403588,
+         "deletion_risk": 0.12040133779264214,
+         "invention_risk": 0.01929260450160772,
+         "accepted": 311,
+         "accepted_positive": 299
+        }
+       },
+       "bicubic": {
+        "threshold": 2.8925334695696883,
+        "n_qualified_gates": 45,
+        "test": {
+         "coverage": 0.4551569506726457,
+         "deletion_risk": 0.08376963350785341,
+         "invention_risk": 0.0049261083743842365,
+         "accepted": 203,
+         "accepted_positive": 191
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 5.202897548299731,
+        "n_qualified_gates": 17,
+        "test": {
+         "coverage": 0.6681614349775785,
+         "deletion_risk": 0.0979020979020979,
+         "invention_risk": 0.020134228187919462,
+         "accepted": 298,
+         "accepted_positive": 286
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.916855799895251,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.4282511210762332,
+         "deletion_risk": 0.055865921787709494,
+         "invention_risk": 0.005235602094240838,
+         "accepted": 191,
+         "accepted_positive": 179
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.455088259695582,
+        "n_qualified_gates": 48,
+        "test": {
+         "coverage": 0.5201793721973094,
+         "deletion_risk": 0.08636363636363636,
+         "invention_risk": 0.09051724137931035,
+         "accepted": 232,
+         "accepted_positive": 220
+        }
+       },
+       "action_pool": {
+        "threshold": 2.4389465704806685,
+        "n_qualified_gates": 51,
+        "test": {
+         "coverage": 0.5089686098654709,
+         "deletion_risk": 0.08796296296296297,
+         "invention_risk": 0.0881057268722467,
+         "accepted": 227,
+         "accepted_positive": 216
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "bilinear",
+       "threshold": 5.973607837189172,
+       "n_qualified_pairs": 233,
+       "test": {
+        "coverage": 0.6973094170403588,
+        "deletion_risk": 0.12040133779264214,
+        "invention_risk": 0.01929260450160772,
+        "accepted": 311,
+        "accepted_positive": 299
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.7593181098723547,
+        "n_qualified_gates": 7,
+        "test": {
+         "coverage": 0.36995515695067266,
+         "deletion_risk": 0.03870967741935484,
+         "invention_risk": 0.0,
+         "accepted": 165,
+         "accepted_positive": 155
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1571852471504167,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3811659192825112,
+         "deletion_risk": 0.05625,
+         "invention_risk": 0.047058823529411764,
+         "accepted": 170,
+         "accepted_positive": 160
+        }
+       },
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.8088010022335115,
+        "n_qualified_gates": 8,
+        "test": {
+         "coverage": 0.3834080717488789,
+         "deletion_risk": 0.037267080745341616,
+         "invention_risk": 0.0,
+         "accepted": 171,
+         "accepted_positive": 161
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1571852471504167,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3811659192825112,
+         "deletion_risk": 0.05625,
+         "invention_risk": 0.047058823529411764,
+         "accepted": 170,
+         "accepted_positive": 160
+        }
+       },
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 1.9567896922181582,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.13228699551569506,
+         "deletion_risk": 0.10204081632653061,
+         "invention_risk": 0.0,
+         "accepted": 59,
+         "accepted_positive": 49
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.838139481332573,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.03614457831325301,
+         "invention_risk": 0.005649717514124294,
+         "accepted": 177,
+         "accepted_positive": 166
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.21107074222398,
+        "n_qualified_gates": 5,
+        "test": {
+         "coverage": 0.4125560538116592,
+         "deletion_risk": 0.05747126436781609,
+         "invention_risk": 0.05434782608695652,
+         "accepted": 184,
+         "accepted_positive": 174
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "restoration_pool",
+       "threshold": 2.171935725280727,
+       "n_qualified_pairs": 6,
+       "test": {
+        "coverage": 0.3901345291479821,
+        "deletion_risk": 0.054878048780487805,
+        "invention_risk": 0.05172413793103448,
+        "accepted": 174,
+        "accepted_positive": 164
+       }
+      }
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.474088353062438,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.24663677130044842,
+         "deletion_risk": 0.06,
+         "invention_risk": 0.0,
+         "accepted": 110,
+         "accepted_positive": 100
+        }
+       },
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 2.8480881858788165,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.07142857142857142,
+         "invention_risk": 0.005154639175257732,
+         "accepted": 194,
+         "accepted_positive": 182
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.9018223040463815,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.05113636363636364,
+         "invention_risk": 0.005319148936170213,
+         "accepted": 188,
+         "accepted_positive": 176
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.05555555555555555,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 2.1973899834265658,
+       "n_qualified_pairs": 21,
+       "test": {
+        "coverage": 0.4080717488789238,
+        "deletion_risk": 0.05813953488372093,
+        "invention_risk": 0.054945054945054944,
+        "accepted": 182,
+        "accepted_positive": 172
+       }
+      }
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.474088353062438,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.24663677130044842,
+         "deletion_risk": 0.06,
+         "invention_risk": 0.0,
+         "accepted": 110,
+         "accepted_positive": 100
+        }
+       },
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 2.8480881858788165,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.07142857142857142,
+         "invention_risk": 0.005154639175257732,
+         "accepted": 194,
+         "accepted_positive": 182
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.9018223040463815,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.05113636363636364,
+         "invention_risk": 0.005319148936170213,
+         "accepted": 188,
+         "accepted_positive": 176
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.05555555555555555,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 2.8480881858788165,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.07142857142857142,
+         "invention_risk": 0.005154639175257732,
+         "accepted": 194,
+         "accepted_positive": 182
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.9018223040463815,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.05113636363636364,
+         "invention_risk": 0.005319148936170213,
+         "accepted": 188,
+         "accepted_positive": 176
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.455088259695582,
+        "n_qualified_gates": 25,
+        "test": {
+         "coverage": 0.5201793721973094,
+         "deletion_risk": 0.08636363636363636,
+         "invention_risk": 0.09051724137931035,
+         "accepted": 232,
+         "accepted_positive": 220
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "restoration_pool",
+       "threshold": 2.173392514815859,
+       "n_qualified_pairs": 20,
+       "test": {
+        "coverage": 0.3901345291479821,
+        "deletion_risk": 0.054878048780487805,
+        "invention_risk": 0.05172413793103448,
+        "accepted": 174,
+        "accepted_positive": 164
+       }
+      }
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.9018223040463815,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.05113636363636364,
+         "invention_risk": 0.005319148936170213,
+         "accepted": 188,
+         "accepted_positive": 176
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.05555555555555555,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "restoration_pool",
+       "threshold": 2.1973899834265658,
+       "n_qualified_pairs": 15,
+       "test": {
+        "coverage": 0.40358744394618834,
+        "deletion_risk": 0.058823529411764705,
+        "invention_risk": 0.05555555555555555,
+        "accepted": 180,
+        "accepted_positive": 170
+       }
+      }
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5510140601519766,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.26905829596412556,
+         "deletion_risk": 0.05454545454545454,
+         "invention_risk": 0.0,
+         "accepted": 120,
+         "accepted_positive": 110
+        }
+       },
+       "bilinear": {
+        "threshold": 1.991295805938339,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.12331838565022421,
+         "deletion_risk": 0.1111111111111111,
+         "invention_risk": 0.0,
+         "accepted": 55,
+         "accepted_positive": 45
+        }
+       },
+       "bicubic": {
+        "threshold": 2.8480881858788165,
+        "n_qualified_gates": 44,
+        "test": {
+         "coverage": 0.4349775784753363,
+         "deletion_risk": 0.07142857142857142,
+         "invention_risk": 0.005154639175257732,
+         "accepted": 194,
+         "accepted_positive": 182
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 2.171935725280727,
+        "n_qualified_gates": 14,
+        "test": {
+         "coverage": 0.2062780269058296,
+         "deletion_risk": 0.0975609756097561,
+         "invention_risk": 0.0,
+         "accepted": 92,
+         "accepted_positive": 82
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.916855799895251,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.4282511210762332,
+         "deletion_risk": 0.055865921787709494,
+         "invention_risk": 0.005235602094240838,
+         "accepted": 191,
+         "accepted_positive": 179
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": {
+        "threshold": 2.4389465704806685,
+        "n_qualified_gates": 51,
+        "test": {
+         "coverage": 0.5089686098654709,
+         "deletion_risk": 0.08796296296296297,
+         "invention_risk": 0.0881057268722467,
+         "accepted": 227,
+         "accepted_positive": 216
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.474088353062438,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.24663677130044842,
+         "deletion_risk": 0.06,
+         "invention_risk": 0.0,
+         "accepted": 110,
+         "accepted_positive": 100
+        }
+       },
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 3.2003216348448604,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.5022421524663677,
+         "deletion_risk": 0.11320754716981132,
+         "invention_risk": 0.004464285714285714,
+         "accepted": 224,
+         "accepted_positive": 212
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.9672182194299377,
+        "n_qualified_gates": 43,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.06989247311827956,
+         "invention_risk": 0.005050505050505051,
+         "accepted": 198,
+         "accepted_positive": 186
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.40358744394618834,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.05555555555555555,
+         "accepted": 180,
+         "accepted_positive": 170
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1973899834265658,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.4080717488789238,
+         "deletion_risk": 0.05813953488372093,
+         "invention_risk": 0.054945054945054944,
+         "accepted": 182,
+         "accepted_positive": 172
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 2.9018223040463815,
+       "n_qualified_pairs": 32,
+       "test": {
+        "coverage": 0.42152466367713004,
+        "deletion_risk": 0.05113636363636364,
+        "invention_risk": 0.005319148936170213,
+        "accepted": 188,
+        "accepted_positive": 176
+       }
+      }
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.8088010022335115,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.3834080717488789,
+         "deletion_risk": 0.037267080745341616,
+         "invention_risk": 0.0,
+         "accepted": 171,
+         "accepted_positive": 161
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.171935725280727,
+        "n_qualified_gates": 12,
+        "test": {
+         "coverage": 0.3901345291479821,
+         "deletion_risk": 0.054878048780487805,
+         "invention_risk": 0.05172413793103448,
+         "accepted": 174,
+         "accepted_positive": 164
+        }
+       },
+       "action_pool": {
+        "threshold": 2.1571852471504167,
+        "n_qualified_gates": 5,
+        "test": {
+         "coverage": 0.38565022421524664,
+         "deletion_risk": 0.05555555555555555,
+         "invention_risk": 0.046511627906976744,
+         "accepted": 172,
+         "accepted_positive": 162
+        }
+       }
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 116,
+     "bilinear": 116,
+     "bicubic": 116,
+     "smooth_bicubic": 116,
+     "unsharp_bicubic": 116,
+     "learned": 118,
+     "restoration_pool": 116,
+     "action_pool": 116
+    },
+    "n_hold": 329,
+    "n_test": 446,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 6.401151545286758,
+      "test": {
+       "coverage": 0.7197309417040358,
+       "deletion_risk": 0.18446601941747573,
+       "invention_risk": 0.021806853582554516,
+       "accepted": 321,
+       "accepted_positive": 309
+      }
+     },
+     "bilinear": {
+      "threshold": 6.345110398326702,
+      "test": {
+       "coverage": 0.7780269058295964,
+       "deletion_risk": 0.18373493975903615,
+       "invention_risk": 0.025936599423631124,
+       "accepted": 347,
+       "accepted_positive": 332
+      }
+     },
+     "bicubic": {
+      "threshold": 6.258975820484324,
+      "test": {
+       "coverage": 0.7286995515695067,
+       "deletion_risk": 0.17252396166134185,
+       "invention_risk": 0.021538461538461538,
+       "accepted": 325,
+       "accepted_positive": 313
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 6.2685098279658344,
+      "test": {
+       "coverage": 0.7690582959641256,
+       "deletion_risk": 0.1702127659574468,
+       "invention_risk": 0.023323615160349854,
+       "accepted": 343,
+       "accepted_positive": 329
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 6.165943604510602,
+      "test": {
+       "coverage": 0.6928251121076233,
+       "deletion_risk": 0.18181818181818182,
+       "invention_risk": 0.012944983818770227,
+       "accepted": 309,
+       "accepted_positive": 297
+      }
+     },
+     "learned": {
+      "threshold": 3.4090725202588024,
+      "test": {
+       "coverage": 0.4551569506726457,
+       "deletion_risk": 0.0049261083743842365,
+       "invention_risk": 0.2955665024630542,
+       "accepted": 203,
+       "accepted_positive": 203
+      }
+     },
+     "restoration_pool": {
+      "threshold": 4.098117886814893,
+      "test": {
+       "coverage": 0.7376681614349776,
+       "deletion_risk": 0.08832807570977919,
+       "invention_risk": 0.17933130699088146,
+       "accepted": 329,
+       "accepted_positive": 317
+      }
+     },
+     "action_pool": {
+      "threshold": 4.098117886814893,
+      "test": {
+       "coverage": 0.7376681614349776,
+       "deletion_risk": 0.09779179810725552,
+       "invention_risk": 0.17933130699088146,
+       "accepted": 329,
+       "accepted_positive": 317
+      }
+     }
+    }
+   },
+   {
+    "seed": 211,
+    "tuning_selected": "restoration_pool",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "fs_portfolio_threshold": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.6951910608414797,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.3430493273542601,
+         "deletion_risk": 0.006944444444444444,
+         "invention_risk": 0.026143790849673203,
+         "accepted": 153,
+         "accepted_positive": 144
+        }
+       },
+       "bilinear": {
+        "threshold": 3.88795624605891,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4663677130044843,
+         "deletion_risk": 0.11616161616161616,
+         "invention_risk": 0.019230769230769232,
+         "accepted": 208,
+         "accepted_positive": 198
+        }
+       },
+       "bicubic": {
+        "threshold": 3.4800596495739295,
+        "n_qualified_gates": 27,
+        "test": {
+         "coverage": 0.4170403587443946,
+         "deletion_risk": 0.08522727272727272,
+         "invention_risk": 0.021505376344086023,
+         "accepted": 186,
+         "accepted_positive": 176
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 41,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.3008627183694736,
+        "n_qualified_gates": 27,
+        "test": {
+         "coverage": 0.37668161434977576,
+         "deletion_risk": 0.04430379746835443,
+         "invention_risk": 0.017857142857142856,
+         "accepted": 168,
+         "accepted_positive": 158
+        }
+       },
+       "learned": {
+        "threshold": 3.102660453304043,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.4484304932735426,
+         "deletion_risk": 0.08947368421052632,
+         "invention_risk": 0.1,
+         "accepted": 200,
+         "accepted_positive": 190
+        }
+       },
+       "restoration_pool": {
+        "threshold": 3.9018979688931372,
+        "n_qualified_gates": 62,
+        "test": {
+         "coverage": 0.6502242152466368,
+         "deletion_risk": 0.11870503597122302,
+         "invention_risk": 0.05172413793103448,
+         "accepted": 290,
+         "accepted_positive": 278
+        }
+       },
+       "action_pool": {
+        "threshold": 4.0154163101616165,
+        "n_qualified_gates": 63,
+        "test": {
+         "coverage": 0.6636771300448431,
+         "deletion_risk": 0.11971830985915492,
+         "invention_risk": 0.057432432432432436,
+         "accepted": 296,
+         "accepted_positive": 284
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 4.0154163101616165,
+       "n_qualified_pairs": 312,
+       "test": {
+        "coverage": 0.6636771300448431,
+        "deletion_risk": 0.11971830985915492,
+        "invention_risk": 0.057432432432432436,
+        "accepted": 296,
+        "accepted_positive": 284
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 2.472476401930752,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.2937219730941704,
+         "deletion_risk": 0.01652892561983471,
+         "invention_risk": 0.022900763358778626,
+         "accepted": 131,
+         "accepted_positive": 121
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": {
+        "threshold": 3.529747545406646,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.600896860986547,
+         "deletion_risk": 0.11328125,
+         "invention_risk": 0.03731343283582089,
+         "accepted": 268,
+         "accepted_positive": 256
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "bicubic",
+       "threshold": 2.472476401930752,
+       "n_qualified_pairs": 1,
+       "test": {
+        "coverage": 0.2937219730941704,
+        "deletion_risk": 0.01652892561983471,
+        "invention_risk": 0.022900763358778626,
+        "accepted": 131,
+        "accepted_positive": 121
+       }
+      }
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 7,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.020466292586614,
+        "n_qualified_gates": 6,
+        "test": {
+         "coverage": 0.3632286995515695,
+         "deletion_risk": 0.02631578947368421,
+         "invention_risk": 0.018518518518518517,
+         "accepted": 162,
+         "accepted_positive": 152
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.33183856502242154,
+         "deletion_risk": 0.007246376811594203,
+         "invention_risk": 0.02027027027027027,
+         "accepted": 148,
+         "accepted_positive": 138
+        }
+       },
+       "action_pool": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.33408071748878926,
+         "deletion_risk": 0.007194244604316547,
+         "invention_risk": 0.020134228187919462,
+         "accepted": 149,
+         "accepted_positive": 139
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 10,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.020466292586614,
+        "n_qualified_gates": 6,
+        "test": {
+         "coverage": 0.3632286995515695,
+         "deletion_risk": 0.02631578947368421,
+         "invention_risk": 0.018518518518518517,
+         "accepted": 162,
+         "accepted_positive": 152
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.33183856502242154,
+         "deletion_risk": 0.007246376811594203,
+         "invention_risk": 0.02027027027027027,
+         "accepted": 148,
+         "accepted_positive": 138
+        }
+       },
+       "action_pool": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.33408071748878926,
+         "deletion_risk": 0.007194244604316547,
+         "invention_risk": 0.020134228187919462,
+         "accepted": 149,
+         "accepted_positive": 139
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5732399604010787,
+        "n_qualified_gates": 5,
+        "test": {
+         "coverage": 0.31390134529147984,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.02142857142857143,
+         "accepted": 140,
+         "accepted_positive": 134
+        }
+       },
+       "bilinear": {
+        "threshold": 3.1287015412449843,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.3721973094170404,
+         "deletion_risk": 0.03205128205128205,
+         "invention_risk": 0.018072289156626505,
+         "accepted": 166,
+         "accepted_positive": 156
+        }
+       },
+       "bicubic": {
+        "threshold": 2.781040039791739,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.3452914798206278,
+         "deletion_risk": 0.034722222222222224,
+         "invention_risk": 0.025974025974025976,
+         "accepted": 154,
+         "accepted_positive": 144
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.5140429728754063,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.3251121076233184,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.020689655172413793,
+         "accepted": 145,
+         "accepted_positive": 135
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 3.3633034334854006,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.5739910313901345,
+         "deletion_risk": 0.10655737704918032,
+         "invention_risk": 0.02734375,
+         "accepted": 256,
+         "accepted_positive": 244
+        }
+       },
+       "action_pool": {
+        "threshold": 3.3633034334854006,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.57847533632287,
+         "deletion_risk": 0.10569105691056911,
+         "invention_risk": 0.027131782945736434,
+         "accepted": 258,
+         "accepted_positive": 246
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.512037830944966,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.42376681614349776,
+         "deletion_risk": 0.07262569832402235,
+         "invention_risk": 0.021164021164021163,
+         "accepted": 189,
+         "accepted_positive": 179
+        }
+       },
+       "bicubic": {
+        "threshold": 1.6494813715726342,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.19730941704035873,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.011363636363636364,
+         "accepted": 88,
+         "accepted_positive": 78
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.676138663296767,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.007142857142857143,
+         "invention_risk": 0.02,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "learned": {
+        "threshold": 3.102660453304043,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.4484304932735426,
+         "deletion_risk": 0.08947368421052632,
+         "invention_risk": 0.1,
+         "accepted": 200,
+         "accepted_positive": 190
+        }
+       },
+       "restoration_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5269058295964125,
+         "deletion_risk": 0.08520179372197309,
+         "invention_risk": 0.01702127659574468,
+         "accepted": 235,
+         "accepted_positive": 223
+        }
+       },
+       "action_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5291479820627802,
+         "deletion_risk": 0.08482142857142858,
+         "invention_risk": 0.01694915254237288,
+         "accepted": 236,
+         "accepted_positive": 224
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 2.9954887492075994,
+       "n_qualified_pairs": 50,
+       "test": {
+        "coverage": 0.5291479820627802,
+        "deletion_risk": 0.08482142857142858,
+        "invention_risk": 0.01694915254237288,
+        "accepted": 236,
+        "accepted_positive": 224
+       }
+      }
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.512037830944966,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.42376681614349776,
+         "deletion_risk": 0.07262569832402235,
+         "invention_risk": 0.021164021164021163,
+         "accepted": 189,
+         "accepted_positive": 179
+        }
+       },
+       "bicubic": {
+        "threshold": 1.6494813715726342,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.19730941704035873,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.011363636363636364,
+         "accepted": 88,
+         "accepted_positive": 78
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.676138663296767,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.007142857142857143,
+         "invention_risk": 0.02,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "learned": {
+        "threshold": 3.102660453304043,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.4484304932735426,
+         "deletion_risk": 0.08947368421052632,
+         "invention_risk": 0.1,
+         "accepted": 200,
+         "accepted_positive": 190
+        }
+       },
+       "restoration_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5269058295964125,
+         "deletion_risk": 0.08520179372197309,
+         "invention_risk": 0.01702127659574468,
+         "accepted": 235,
+         "accepted_positive": 223
+        }
+       },
+       "action_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5291479820627802,
+         "deletion_risk": 0.08482142857142858,
+         "invention_risk": 0.01694915254237288,
+         "accepted": 236,
+         "accepted_positive": 224
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "restoration_pool",
+       "threshold": 2.9954887492075994,
+       "n_qualified_pairs": 32,
+       "test": {
+        "coverage": 0.5269058295964125,
+        "deletion_risk": 0.08520179372197309,
+        "invention_risk": 0.01702127659574468,
+        "accepted": 235,
+        "accepted_positive": 223
+       }
+      }
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.512037830944966,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.42376681614349776,
+         "deletion_risk": 0.07262569832402235,
+         "invention_risk": 0.021164021164021163,
+         "accepted": 189,
+         "accepted_positive": 179
+        }
+       },
+       "bicubic": {
+        "threshold": 2.3182095361503854,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.273542600896861,
+         "deletion_risk": 0.008928571428571428,
+         "invention_risk": 0.02459016393442623,
+         "accepted": 122,
+         "accepted_positive": 112
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.676138663296767,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.007142857142857143,
+         "invention_risk": 0.02,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5269058295964125,
+         "deletion_risk": 0.08520179372197309,
+         "invention_risk": 0.01702127659574468,
+         "accepted": 235,
+         "accepted_positive": 223
+        }
+       },
+       "action_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.5291479820627802,
+         "deletion_risk": 0.08482142857142858,
+         "invention_risk": 0.01694915254237288,
+         "accepted": 236,
+         "accepted_positive": 224
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "restoration_pool",
+       "threshold": 2.9954887492075994,
+       "n_qualified_pairs": 46,
+       "test": {
+        "coverage": 0.5269058295964125,
+        "deletion_risk": 0.08520179372197309,
+        "invention_risk": 0.01702127659574468,
+        "accepted": 235,
+        "accepted_positive": 223
+       }
+      }
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.512037830944966,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.42376681614349776,
+         "deletion_risk": 0.07262569832402235,
+         "invention_risk": 0.021164021164021163,
+         "accepted": 189,
+         "accepted_positive": 179
+        }
+       },
+       "bicubic": null,
+       "smooth_bicubic": {
+        "threshold": 3.5355472460424218,
+        "n_qualified_gates": 21,
+        "test": {
+         "coverage": 0.4260089686098655,
+         "deletion_risk": 0.07222222222222222,
+         "invention_risk": 0.02631578947368421,
+         "accepted": 190,
+         "accepted_positive": 180
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 2.676138663296767,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.336322869955157,
+         "deletion_risk": 0.007142857142857143,
+         "invention_risk": 0.02,
+         "accepted": 150,
+         "accepted_positive": 140
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.5269058295964125,
+         "deletion_risk": 0.08520179372197309,
+         "invention_risk": 0.01702127659574468,
+         "accepted": 235,
+         "accepted_positive": 223
+        }
+       },
+       "action_pool": {
+        "threshold": 2.9954887492075994,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.5291479820627802,
+         "deletion_risk": 0.08482142857142858,
+         "invention_risk": 0.01694915254237288,
+         "accepted": 236,
+         "accepted_positive": 224
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 2.9954887492075994,
+       "n_qualified_pairs": 28,
+       "test": {
+        "coverage": 0.5291479820627802,
+        "deletion_risk": 0.08482142857142858,
+        "invention_risk": 0.01694915254237288,
+        "accepted": 236,
+        "accepted_positive": 224
+       }
+      }
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.6951910608414797,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.3430493273542601,
+         "deletion_risk": 0.006944444444444444,
+         "invention_risk": 0.026143790849673203,
+         "accepted": 153,
+         "accepted_positive": 144
+        }
+       },
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 1.2782606312060283,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.1367713004484305,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.0,
+         "accepted": 61,
+         "accepted_positive": 51
+        }
+       },
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5178364663969433,
+        "n_qualified_gates": 19,
+        "test": {
+         "coverage": 0.29596412556053814,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.022727272727272728,
+         "accepted": 132,
+         "accepted_positive": 130
+        }
+       },
+       "bilinear": {
+        "threshold": 3.94636358289139,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4798206278026906,
+         "deletion_risk": 0.13793103448275862,
+         "invention_risk": 0.018691588785046728,
+         "accepted": 214,
+         "accepted_positive": 203
+        }
+       },
+       "bicubic": {
+        "threshold": 1.6494813715726342,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.19730941704035873,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.011363636363636364,
+         "accepted": 88,
+         "accepted_positive": 78
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.8852127531450273,
+        "n_qualified_gates": 43,
+        "test": {
+         "coverage": 0.46860986547085204,
+         "deletion_risk": 0.1218274111675127,
+         "invention_risk": 0.023923444976076555,
+         "accepted": 209,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.595882455732326,
+        "n_qualified_gates": 26,
+        "test": {
+         "coverage": 0.42152466367713004,
+         "deletion_risk": 0.07865168539325842,
+         "invention_risk": 0.031914893617021274,
+         "accepted": 188,
+         "accepted_positive": 178
+        }
+       },
+       "learned": {
+        "threshold": 3.221156829148322,
+        "n_qualified_gates": 32,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.09,
+         "invention_risk": 0.10426540284360189,
+         "accepted": 211,
+         "accepted_positive": 200
+        }
+       },
+       "restoration_pool": {
+        "threshold": 4.0257809998017295,
+        "n_qualified_gates": 62,
+        "test": {
+         "coverage": 0.6614349775784754,
+         "deletion_risk": 0.12014134275618374,
+         "invention_risk": 0.0576271186440678,
+         "accepted": 295,
+         "accepted_positive": 283
+        }
+       },
+       "action_pool": {
+        "threshold": 3.986642873540672,
+        "n_qualified_gates": 66,
+        "test": {
+         "coverage": 0.6547085201793722,
+         "deletion_risk": 0.11785714285714285,
+         "invention_risk": 0.05136986301369863,
+         "accepted": 292,
+         "accepted_positive": 280
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 2.9954887492075994,
+       "n_qualified_pairs": 87,
+       "test": {
+        "coverage": 0.5291479820627802,
+        "deletion_risk": 0.08482142857142858,
+        "invention_risk": 0.01694915254237288,
+        "accepted": 236,
+        "accepted_positive": 224
+       }
+      }
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 2.5732399604010787,
+        "n_qualified_gates": 18,
+        "test": {
+         "coverage": 0.31390134529147984,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.02142857142857143,
+         "accepted": 140,
+         "accepted_positive": 134
+        }
+       },
+       "bilinear": {
+        "threshold": 3.020466292586614,
+        "n_qualified_gates": 10,
+        "test": {
+         "coverage": 0.3632286995515695,
+         "deletion_risk": 0.02631578947368421,
+         "invention_risk": 0.018518518518518517,
+         "accepted": 162,
+         "accepted_positive": 152
+        }
+       },
+       "bicubic": {
+        "threshold": 2.3182095361503854,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.273542600896861,
+         "deletion_risk": 0.008928571428571428,
+         "invention_risk": 0.02459016393442623,
+         "accepted": 122,
+         "accepted_positive": 112
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.28475336322869954,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.015748031496062992,
+         "accepted": 127,
+         "accepted_positive": 117
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 3.102660453304043,
+        "n_qualified_gates": 12,
+        "test": {
+         "coverage": 0.5448430493273543,
+         "deletion_risk": 0.09956709956709957,
+         "invention_risk": 0.0205761316872428,
+         "accepted": 243,
+         "accepted_positive": 231
+        }
+       },
+       "action_pool": {
+        "threshold": 2.290465534371514,
+        "n_qualified_gates": 8,
+        "test": {
+         "coverage": 0.33408071748878926,
+         "deletion_risk": 0.007194244604316547,
+         "invention_risk": 0.020134228187919462,
+         "accepted": 149,
+         "accepted_positive": 139
+        }
+       }
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 118,
+     "bilinear": 116,
+     "bicubic": 116,
+     "smooth_bicubic": 116,
+     "unsharp_bicubic": 116,
+     "learned": 116,
+     "restoration_pool": 116,
+     "action_pool": 116
+    },
+    "n_hold": 329,
+    "n_test": 446,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 4.502729961076808,
+      "test": {
+       "coverage": 0.5807174887892377,
+       "deletion_risk": 0.23481781376518218,
+       "invention_risk": 0.03474903474903475,
+       "accepted": 259,
+       "accepted_positive": 247
+      }
+     },
+     "bilinear": {
+      "threshold": 5.072672529324347,
+      "test": {
+       "coverage": 0.6300448430493274,
+       "deletion_risk": 0.2862453531598513,
+       "invention_risk": 0.028469750889679714,
+       "accepted": 281,
+       "accepted_positive": 269
+      }
+     },
+     "bicubic": {
+      "threshold": 4.805697417810325,
+      "test": {
+       "coverage": 0.5807174887892377,
+       "deletion_risk": 0.2550607287449393,
+       "invention_risk": 0.019305019305019305,
+       "accepted": 259,
+       "accepted_positive": 247
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 4.975880862562746,
+      "test": {
+       "coverage": 0.6053811659192825,
+       "deletion_risk": 0.24031007751937986,
+       "invention_risk": 0.025925925925925925,
+       "accepted": 270,
+       "accepted_positive": 258
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 4.830667072640212,
+      "test": {
+       "coverage": 0.5964125560538116,
+       "deletion_risk": 0.23622047244094488,
+       "invention_risk": 0.03759398496240601,
+       "accepted": 266,
+       "accepted_positive": 254
+      }
+     },
+     "learned": {
+      "threshold": 4.699637033320212,
+      "test": {
+       "coverage": 0.7668161434977578,
+       "deletion_risk": 0.12121212121212122,
+       "invention_risk": 0.21929824561403508,
+       "accepted": 342,
+       "accepted_positive": 330
+      }
+     },
+     "restoration_pool": {
+      "threshold": 5.185959242127368,
+      "test": {
+       "coverage": 0.8878923766816144,
+       "deletion_risk": 0.14882506527415143,
+       "invention_risk": 0.12878787878787878,
+       "accepted": 396,
+       "accepted_positive": 383
+      }
+     },
+     "action_pool": {
+      "threshold": 5.273713217537578,
+      "test": {
+       "coverage": 0.899103139013453,
+       "deletion_risk": 0.15206185567010308,
+       "invention_risk": 0.12967581047381546,
+       "accepted": 401,
+       "accepted_positive": 388
+      }
+     }
+    }
+   },
+   {
+    "seed": 223,
+    "tuning_selected": "smooth_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "fs_portfolio_threshold": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.647097491158193,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.07106598984771574,
+         "invention_risk": 0.004830917874396135,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "bilinear": {
+        "threshold": 3.692824811296742,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.47757847533632286,
+         "deletion_risk": 0.08374384236453201,
+         "invention_risk": 0.004694835680751174,
+         "accepted": 213,
+         "accepted_positive": 203
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 39,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.6469058234373537,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.08780487804878048,
+         "invention_risk": 0.0,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7753393417554477,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4663677130044843,
+         "deletion_risk": 0.025510204081632654,
+         "invention_risk": 0.019230769230769232,
+         "accepted": 208,
+         "accepted_positive": 196
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7753393417554477,
+        "n_qualified_gates": 43,
+        "test": {
+         "coverage": 0.47085201793721976,
+         "deletion_risk": 0.025252525252525252,
+         "invention_risk": 0.01904761904761905,
+         "accepted": 210,
+         "accepted_positive": 198
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "bicubic",
+       "threshold": 3.8535648562238953,
+       "n_qualified_pairs": 279,
+       "test": {
+        "coverage": 0.48654708520179374,
+        "deletion_risk": 0.08292682926829269,
+        "invention_risk": 0.004608294930875576,
+        "accepted": 217,
+        "accepted_positive": 205
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.4828127077702575,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.44170403587443946,
+         "deletion_risk": 0.06417112299465241,
+         "invention_risk": 0.005076142131979695,
+         "accepted": 197,
+         "accepted_positive": 187
+        }
+       },
+       "bilinear": {
+        "threshold": 3.63296194895906,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.47085201793721976,
+         "deletion_risk": 0.085,
+         "invention_risk": 0.0,
+         "accepted": 210,
+         "accepted_positive": 200
+        }
+       },
+       "bicubic": {
+        "threshold": 3.762933652905038,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.07462686567164178,
+         "invention_risk": 0.004739336492890996,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "raw_nearest",
+       "threshold": 3.4828127077702575,
+       "n_qualified_pairs": 1,
+       "test": {
+        "coverage": 0.44170403587443946,
+        "deletion_risk": 0.06417112299465241,
+        "invention_risk": 0.005076142131979695,
+        "accepted": 197,
+        "accepted_positive": 187
+       }
+      }
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.1916161130178704,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.4013452914798206,
+         "deletion_risk": 0.04142011834319527,
+         "invention_risk": 0.00558659217877095,
+         "accepted": 179,
+         "accepted_positive": 169
+        }
+       },
+       "bilinear": {
+        "threshold": 3.032342400276406,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.38789237668161436,
+         "deletion_risk": 0.018404907975460124,
+         "invention_risk": 0.0,
+         "accepted": 173,
+         "accepted_positive": 163
+        }
+       },
+       "bicubic": {
+        "threshold": 3.3540407456408623,
+        "n_qualified_gates": 20,
+        "test": {
+         "coverage": 0.4170403587443946,
+         "deletion_risk": 0.03409090909090909,
+         "invention_risk": 0.005376344086021506,
+         "accepted": 186,
+         "accepted_positive": 176
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.0356407873186138,
+        "n_qualified_gates": 10,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.017964071856287425,
+         "invention_risk": 0.0,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.4227310046158674,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.05583756345177665,
+         "invention_risk": 0.00966183574879227,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.6316746938542463,
+        "n_qualified_gates": 20,
+        "test": {
+         "coverage": 0.437219730941704,
+         "deletion_risk": 0.01092896174863388,
+         "invention_risk": 0.015384615384615385,
+         "accepted": 195,
+         "accepted_positive": 183
+        }
+       },
+       "action_pool": {
+        "threshold": 2.6316746938542463,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4439461883408072,
+         "deletion_risk": 0.010752688172043012,
+         "invention_risk": 0.015151515151515152,
+         "accepted": 198,
+         "accepted_positive": 186
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.3498202303218982,
+       "n_qualified_pairs": 59,
+       "test": {
+        "coverage": 0.45739910313901344,
+        "deletion_risk": 0.05154639175257732,
+        "invention_risk": 0.00980392156862745,
+        "accepted": 204,
+        "accepted_positive": 194
+       }
+      }
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.1916161130178704,
+        "n_qualified_gates": 24,
+        "test": {
+         "coverage": 0.4013452914798206,
+         "deletion_risk": 0.04142011834319527,
+         "invention_risk": 0.00558659217877095,
+         "accepted": 179,
+         "accepted_positive": 169
+        }
+       },
+       "bilinear": {
+        "threshold": 3.032342400276406,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.38789237668161436,
+         "deletion_risk": 0.018404907975460124,
+         "invention_risk": 0.0,
+         "accepted": 173,
+         "accepted_positive": 163
+        }
+       },
+       "bicubic": {
+        "threshold": 3.3540407456408623,
+        "n_qualified_gates": 21,
+        "test": {
+         "coverage": 0.4170403587443946,
+         "deletion_risk": 0.03409090909090909,
+         "invention_risk": 0.005376344086021506,
+         "accepted": 186,
+         "accepted_positive": 176
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.0356407873186138,
+        "n_qualified_gates": 11,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.017964071856287425,
+         "invention_risk": 0.0,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.4227310046158674,
+        "n_qualified_gates": 22,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.05583756345177665,
+         "invention_risk": 0.00966183574879227,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.6316746938542463,
+        "n_qualified_gates": 20,
+        "test": {
+         "coverage": 0.437219730941704,
+         "deletion_risk": 0.01092896174863388,
+         "invention_risk": 0.015384615384615385,
+         "accepted": 195,
+         "accepted_positive": 183
+        }
+       },
+       "action_pool": {
+        "threshold": 2.699158017098714,
+        "n_qualified_gates": 23,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.3498202303218982,
+       "n_qualified_pairs": 61,
+       "test": {
+        "coverage": 0.45739910313901344,
+        "deletion_risk": 0.05154639175257732,
+        "invention_risk": 0.00980392156862745,
+        "accepted": 204,
+        "accepted_positive": 194
+       }
+      }
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.4962211472524505,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.4461883408071749,
+         "deletion_risk": 0.06878306878306878,
+         "invention_risk": 0.005025125628140704,
+         "accepted": 199,
+         "accepted_positive": 189
+        }
+       },
+       "bilinear": {
+        "threshold": 3.4884621488758834,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.44170403587443946,
+         "deletion_risk": 0.058823529411764705,
+         "invention_risk": 0.0,
+         "accepted": 197,
+         "accepted_positive": 187
+        }
+       },
+       "bicubic": {
+        "threshold": 3.695330131991861,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.4618834080717489,
+         "deletion_risk": 0.07653061224489796,
+         "invention_risk": 0.0048543689320388345,
+         "accepted": 206,
+         "accepted_positive": 196
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.4911695872984225,
+        "n_qualified_gates": 2,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.07614213197969544,
+         "invention_risk": 0.0,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.6384621749989408,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.484304932735426,
+         "deletion_risk": 0.05825242718446602,
+         "invention_risk": 0.013888888888888888,
+         "accepted": 216,
+         "accepted_positive": 206
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.4484304932735426,
+         "deletion_risk": 0.010638297872340425,
+         "invention_risk": 0.015,
+         "accepted": 200,
+         "accepted_positive": 188
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 2.699158017098714,
+       "n_qualified_pairs": 25,
+       "test": {
+        "coverage": 0.452914798206278,
+        "deletion_risk": 0.010526315789473684,
+        "invention_risk": 0.01485148514851485,
+        "accepted": 202,
+        "accepted_positive": 190
+       }
+      }
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.647097491158193,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.07106598984771574,
+         "invention_risk": 0.004830917874396135,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "bilinear": {
+        "threshold": 3.657316036327971,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.0845771144278607,
+         "invention_risk": 0.0,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.6469058234373537,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.08780487804878048,
+         "invention_risk": 0.0,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7431999685246016,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.45739910313901344,
+         "deletion_risk": 0.020833333333333332,
+         "invention_risk": 0.014705882352941176,
+         "accepted": 204,
+         "accepted_positive": 192
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.6384621749989408,
+       "n_qualified_pairs": 202,
+       "test": {
+        "coverage": 0.484304932735426,
+        "deletion_risk": 0.05825242718446602,
+        "invention_risk": 0.013888888888888888,
+        "accepted": 216,
+        "accepted_positive": 206
+       }
+      }
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.647097491158193,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.07106598984771574,
+         "invention_risk": 0.004830917874396135,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "bilinear": {
+        "threshold": 3.657316036327971,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.0845771144278607,
+         "invention_risk": 0.0,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.6469058234373537,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.08780487804878048,
+         "invention_risk": 0.0,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7431999685246016,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.45739910313901344,
+         "deletion_risk": 0.020833333333333332,
+         "invention_risk": 0.014705882352941176,
+         "accepted": 204,
+         "accepted_positive": 192
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "smooth_bicubic",
+       "threshold": 3.6469058234373537,
+       "n_qualified_pairs": 34,
+       "test": {
+        "coverage": 0.4820627802690583,
+        "deletion_risk": 0.08780487804878048,
+        "invention_risk": 0.0,
+        "accepted": 215,
+        "accepted_positive": 205
+       }
+      }
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.647097491158193,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4641255605381166,
+         "deletion_risk": 0.07106598984771574,
+         "invention_risk": 0.004830917874396135,
+         "accepted": 207,
+         "accepted_positive": 197
+        }
+       },
+       "bilinear": {
+        "threshold": 3.657316036327971,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.0845771144278607,
+         "invention_risk": 0.0,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.6469058234373537,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.08780487804878048,
+         "invention_risk": 0.0,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7431999685246016,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.45739910313901344,
+         "deletion_risk": 0.020833333333333332,
+         "invention_risk": 0.014705882352941176,
+         "accepted": 204,
+         "accepted_positive": 192
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.6384621749989408,
+       "n_qualified_pairs": 189,
+       "test": {
+        "coverage": 0.484304932735426,
+        "deletion_risk": 0.05825242718446602,
+        "invention_risk": 0.013888888888888888,
+        "accepted": 216,
+        "accepted_positive": 206
+       }
+      }
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.490920954773825,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.4461883408071749,
+         "deletion_risk": 0.06878306878306878,
+         "invention_risk": 0.005025125628140704,
+         "accepted": 199,
+         "accepted_positive": 189
+        }
+       },
+       "bilinear": {
+        "threshold": 3.657316036327971,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.0845771144278607,
+         "invention_risk": 0.0,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "bicubic": {
+        "threshold": 3.762933652905038,
+        "n_qualified_gates": 35,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.07462686567164178,
+         "invention_risk": 0.004739336492890996,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.5901198691896705,
+        "n_qualified_gates": 31,
+        "test": {
+         "coverage": 0.4798206278026906,
+         "deletion_risk": 0.08823529411764706,
+         "invention_risk": 0.0,
+         "accepted": 214,
+         "accepted_positive": 204
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 34,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7431999685246016,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.45739910313901344,
+         "deletion_risk": 0.020833333333333332,
+         "invention_risk": 0.014705882352941176,
+         "accepted": 204,
+         "accepted_positive": 192
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "bicubic",
+       "threshold": 3.6911078768205305,
+       "n_qualified_pairs": 150,
+       "test": {
+        "coverage": 0.45964125560538116,
+        "deletion_risk": 0.07692307692307693,
+        "invention_risk": 0.004878048780487805,
+        "accepted": 205,
+        "accepted_positive": 195
+       }
+      }
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 3.692824811296742,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.47757847533632286,
+         "deletion_risk": 0.08374384236453201,
+         "invention_risk": 0.004694835680751174,
+         "accepted": 213,
+         "accepted_positive": 203
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 39,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": {
+        "threshold": 3.712851315973018,
+        "n_qualified_gates": 40,
+        "test": {
+         "coverage": 0.48878923766816146,
+         "deletion_risk": 0.0625,
+         "invention_risk": 0.013761467889908258,
+         "accepted": 218,
+         "accepted_positive": 208
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7753393417554477,
+        "n_qualified_gates": 42,
+        "test": {
+         "coverage": 0.4663677130044843,
+         "deletion_risk": 0.025510204081632654,
+         "invention_risk": 0.019230769230769232,
+         "accepted": 208,
+         "accepted_positive": 196
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7753393417554477,
+        "n_qualified_gates": 43,
+        "test": {
+         "coverage": 0.47085201793721976,
+         "deletion_risk": 0.025252525252525252,
+         "invention_risk": 0.01904761904761905,
+         "accepted": 210,
+         "accepted_positive": 198
+        }
+       }
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.8073354417445247,
+        "n_qualified_gates": 46,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08695652173913043,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 207
+        }
+       },
+       "bilinear": {
+        "threshold": 3.657316036327971,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4730941704035874,
+         "deletion_risk": 0.0845771144278607,
+         "invention_risk": 0.0,
+         "accepted": 211,
+         "accepted_positive": 201
+        }
+       },
+       "bicubic": {
+        "threshold": 3.8535648562238953,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.48654708520179374,
+         "deletion_risk": 0.08292682926829269,
+         "invention_risk": 0.004608294930875576,
+         "accepted": 217,
+         "accepted_positive": 205
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.6469058234373537,
+        "n_qualified_gates": 36,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.08780487804878048,
+         "invention_risk": 0.0,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.878856300944593,
+        "n_qualified_gates": 43,
+        "test": {
+         "coverage": 0.5179372197309418,
+         "deletion_risk": 0.06787330316742081,
+         "invention_risk": 0.012987012987012988,
+         "accepted": 231,
+         "accepted_positive": 221
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.7431999685246016,
+        "n_qualified_gates": 37,
+        "test": {
+         "coverage": 0.45739910313901344,
+         "deletion_risk": 0.020833333333333332,
+         "invention_risk": 0.014705882352941176,
+         "accepted": 204,
+         "accepted_positive": 192
+        }
+       },
+       "action_pool": {
+        "threshold": 2.7033795969323435,
+        "n_qualified_gates": 38,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.712851315973018,
+       "n_qualified_pairs": 237,
+       "test": {
+        "coverage": 0.48878923766816146,
+        "deletion_risk": 0.0625,
+        "invention_risk": 0.013761467889908258,
+        "accepted": 218,
+        "accepted_positive": 208
+       }
+      }
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 3.1916161130178704,
+        "n_qualified_gates": 25,
+        "test": {
+         "coverage": 0.4013452914798206,
+         "deletion_risk": 0.04142011834319527,
+         "invention_risk": 0.00558659217877095,
+         "accepted": 179,
+         "accepted_positive": 169
+        }
+       },
+       "bilinear": {
+        "threshold": 3.032342400276406,
+        "n_qualified_gates": 13,
+        "test": {
+         "coverage": 0.38789237668161436,
+         "deletion_risk": 0.018404907975460124,
+         "invention_risk": 0.0,
+         "accepted": 173,
+         "accepted_positive": 163
+        }
+       },
+       "bicubic": {
+        "threshold": 3.6911078768205305,
+        "n_qualified_gates": 23,
+        "test": {
+         "coverage": 0.45964125560538116,
+         "deletion_risk": 0.07692307692307693,
+         "invention_risk": 0.004878048780487805,
+         "accepted": 205,
+         "accepted_positive": 195
+        }
+       },
+       "smooth_bicubic": {
+        "threshold": 3.0356407873186138,
+        "n_qualified_gates": 16,
+        "test": {
+         "coverage": 0.3968609865470852,
+         "deletion_risk": 0.017964071856287425,
+         "invention_risk": 0.0,
+         "accepted": 177,
+         "accepted_positive": 167
+        }
+       },
+       "unsharp_bicubic": {
+        "threshold": 3.5975880157273776,
+        "n_qualified_gates": 25,
+        "test": {
+         "coverage": 0.4820627802690583,
+         "deletion_risk": 0.05853658536585366,
+         "invention_risk": 0.013953488372093023,
+         "accepted": 215,
+         "accepted_positive": 205
+        }
+       },
+       "learned": null,
+       "restoration_pool": {
+        "threshold": 2.699158017098714,
+        "n_qualified_gates": 28,
+        "test": {
+         "coverage": 0.4484304932735426,
+         "deletion_risk": 0.010638297872340425,
+         "invention_risk": 0.015,
+         "accepted": 200,
+         "accepted_positive": 188
+        }
+       },
+       "action_pool": {
+        "threshold": 2.699158017098714,
+        "n_qualified_gates": 30,
+        "test": {
+         "coverage": 0.452914798206278,
+         "deletion_risk": 0.010526315789473684,
+         "invention_risk": 0.01485148514851485,
+         "accepted": 202,
+         "accepted_positive": 190
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "unsharp_bicubic",
+       "threshold": 3.4227310046158674,
+       "n_qualified_pairs": 87,
+       "test": {
+        "coverage": 0.4641255605381166,
+        "deletion_risk": 0.05583756345177665,
+        "invention_risk": 0.00966183574879227,
+        "accepted": 207,
+        "accepted_positive": 197
+       }
+      }
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 118,
+     "bilinear": 116,
+     "bicubic": 116,
+     "smooth_bicubic": 116,
+     "unsharp_bicubic": 118,
+     "learned": 118,
+     "restoration_pool": 118,
+     "action_pool": 118
+    },
+    "n_hold": 329,
+    "n_test": 446,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 4.524151970867656,
+      "test": {
+       "coverage": 0.5829596412556054,
+       "deletion_risk": 0.18548387096774194,
+       "invention_risk": 0.015384615384615385,
+       "accepted": 260,
+       "accepted_positive": 248
+      }
+     },
+     "bilinear": {
+      "threshold": 4.441833748682085,
+      "test": {
+       "coverage": 0.6031390134529148,
+       "deletion_risk": 0.17898832684824903,
+       "invention_risk": 0.0037174721189591076,
+       "accepted": 269,
+       "accepted_positive": 257
+      }
+     },
+     "bicubic": {
+      "threshold": 4.880674373697577,
+      "test": {
+       "coverage": 0.6278026905829597,
+       "deletion_risk": 0.21641791044776118,
+       "invention_risk": 0.014285714285714285,
+       "accepted": 280,
+       "accepted_positive": 268
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 4.438860536699093,
+      "test": {
+       "coverage": 0.6076233183856502,
+       "deletion_risk": 0.1891891891891892,
+       "invention_risk": 0.0036900369003690036,
+       "accepted": 271,
+       "accepted_positive": 259
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 4.612298678191448,
+      "test": {
+       "coverage": 0.6098654708520179,
+       "deletion_risk": 0.17692307692307693,
+       "invention_risk": 0.014705882352941176,
+       "accepted": 272,
+       "accepted_positive": 260
+      }
+     },
+     "learned": {
+      "threshold": 3.0711446502917146,
+      "test": {
+       "coverage": 0.2600896860986547,
+       "deletion_risk": 0.008849557522123894,
+       "invention_risk": 0.5431034482758621,
+       "accepted": 116,
+       "accepted_positive": 113
+      }
+     },
+     "restoration_pool": {
+      "threshold": 3.207017190341187,
+      "test": {
+       "coverage": 0.5874439461883408,
+       "deletion_risk": 0.03614457831325301,
+       "invention_risk": 0.1297709923664122,
+       "accepted": 262,
+       "accepted_positive": 249
+      }
+     },
+     "action_pool": {
+      "threshold": 3.3454243845667784,
+      "test": {
+       "coverage": 0.6188340807174888,
+       "deletion_risk": 0.03802281368821293,
+       "invention_risk": 0.14492753623188406,
+       "accepted": 276,
+       "accepted_positive": 263
+      }
+     }
+    }
+   }
+  ],
+  "kolektor_sdd2": [
+   {
+    "seed": 201,
+    "tuning_selected": "smooth_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": {
+        "threshold": 1.6467398448038506,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.05677290836653386,
+         "deletion_risk": 0.02040816326530612,
+         "invention_risk": 0.17543859649122806,
+         "accepted": 57,
+         "accepted_positive": 49
+        }
+       },
+       "bilinear": null,
+       "bicubic": {
+        "threshold": 1.397440078275577,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.05776892430278884,
+         "deletion_risk": 0.037037037037037035,
+         "invention_risk": 0.10344827586206896,
+         "accepted": 58,
+         "accepted_positive": 54
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": {
+        "threshold": 0.9754178609141411,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.0398406374501992,
+         "deletion_risk": 0.0,
+         "invention_risk": 0.075,
+         "accepted": 40,
+         "accepted_positive": 37
+        }
+       },
+       "restoration_pool": {
+        "threshold": 1.1848950437749792,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.06374501992031872,
+         "deletion_risk": 0.05263157894736842,
+         "invention_risk": 0.140625,
+         "accepted": 64,
+         "accepted_positive": 57
+        }
+       },
+       "action_pool": {
+        "threshold": 1.1848950437749792,
+        "n_qualified_gates": 4,
+        "test": {
+         "coverage": 0.06374501992031872,
+         "deletion_risk": 0.05263157894736842,
+         "invention_risk": 0.140625,
+         "accepted": 64,
+         "accepted_positive": 57
+        }
+       }
+      },
+      "portfolio": {
+       "policy": "action_pool",
+       "threshold": 1.1848950437749792,
+       "n_qualified_pairs": 11,
+       "test": {
+        "coverage": 0.06374501992031872,
+        "deletion_risk": 0.05263157894736842,
+        "invention_risk": 0.140625,
+        "accepted": 64,
+        "accepted_positive": 57
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": {
+        "threshold": 1.881626605575155,
+        "n_qualified_gates": 1,
+        "test": {
+         "coverage": 0.06573705179282868,
+         "deletion_risk": 0.05172413793103448,
+         "invention_risk": 0.15151515151515152,
+         "accepted": 66,
+         "accepted_positive": 58
+        }
+       },
+       "bicubic": {
+        "threshold": 1.6836097498950497,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.07470119521912351,
+         "deletion_risk": 0.05,
+         "invention_risk": 0.2,
+         "accepted": 75,
+         "accepted_positive": 60
+        }
+       },
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": {
+        "threshold": 1.9443834709251893,
+        "n_qualified_gates": 5,
+        "test": {
+         "coverage": 0.07569721115537849,
+         "deletion_risk": 0.06557377049180328,
+         "invention_risk": 0.19736842105263158,
+         "accepted": 76,
+         "accepted_positive": 61
+        }
+       },
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 174,
+     "bilinear": 174,
+     "bicubic": 173,
+     "smooth_bicubic": 173,
+     "unsharp_bicubic": 174,
+     "learned": 174,
+     "restoration_pool": 173,
+     "action_pool": 173
+    },
+    "n_hold": 416,
+    "n_test": 1004,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 3.070939502524574,
+      "test": {
+       "coverage": 0.14342629482071714,
+       "deletion_risk": 0.08333333333333333,
+       "invention_risk": 0.3125,
+       "accepted": 144,
+       "accepted_positive": 72
+      }
+     },
+     "bilinear": {
+      "threshold": 3.1721191985423633,
+      "test": {
+       "coverage": 0.13147410358565736,
+       "deletion_risk": 0.08450704225352113,
+       "invention_risk": 0.36363636363636365,
+       "accepted": 132,
+       "accepted_positive": 71
+      }
+     },
+     "bicubic": {
+      "threshold": 4.632351629801332,
+      "test": {
+       "coverage": 0.299800796812749,
+       "deletion_risk": 0.18181818181818182,
+       "invention_risk": 0.20930232558139536,
+       "accepted": 301,
+       "accepted_positive": 88
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 2.542663000109989,
+      "test": {
+       "coverage": 0.15139442231075698,
+       "deletion_risk": 0.10256410256410256,
+       "invention_risk": 0.2894736842105263,
+       "accepted": 152,
+       "accepted_positive": 78
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 3.6267902513014745,
+      "test": {
+       "coverage": 0.24203187250996017,
+       "deletion_risk": 0.1728395061728395,
+       "invention_risk": 0.18930041152263374,
+       "accepted": 243,
+       "accepted_positive": 81
+      }
+     },
+     "learned": {
+      "threshold": 4.000163236871309,
+      "test": {
+       "coverage": 0.2151394422310757,
+       "deletion_risk": 0.14814814814814814,
+       "invention_risk": 0.2361111111111111,
+       "accepted": 216,
+       "accepted_positive": 81
+      }
+     },
+     "restoration_pool": {
+      "threshold": 2.139629030648788,
+      "test": {
+       "coverage": 0.1643426294820717,
+       "deletion_risk": 0.1411764705882353,
+       "invention_risk": 0.3212121212121212,
+       "accepted": 165,
+       "accepted_positive": 85
+      }
+     },
+     "action_pool": {
+      "threshold": 2.139629030648788,
+      "test": {
+       "coverage": 0.16533864541832669,
+       "deletion_risk": 0.1411764705882353,
+       "invention_risk": 0.3253012048192771,
+       "accepted": 166,
+       "accepted_positive": 85
+      }
+     }
+    }
+   },
+   {
+    "seed": 203,
+    "tuning_selected": "bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": {
+        "threshold": 1.5411328148685188,
+        "n_qualified_gates": 3,
+        "test": {
+         "coverage": 0.054780876494023904,
+         "deletion_risk": 0.02127659574468085,
+         "invention_risk": 0.18181818181818182,
+         "accepted": 55,
+         "accepted_positive": 47
+        }
+       },
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": {
+       "policy": "learned",
+       "threshold": 1.5411328148685188,
+       "n_qualified_pairs": 3,
+       "test": {
+        "coverage": 0.054780876494023904,
+        "deletion_risk": 0.02127659574468085,
+        "invention_risk": 0.18181818181818182,
+        "accepted": 55,
+        "accepted_positive": 47
+       }
+      }
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 171,
+     "bilinear": 174,
+     "bicubic": 174,
+     "smooth_bicubic": 174,
+     "unsharp_bicubic": 174,
+     "learned": 172,
+     "restoration_pool": 174,
+     "action_pool": 174
+    },
+    "n_hold": 416,
+    "n_test": 1004,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 2.944278126152523,
+      "test": {
+       "coverage": 0.13745019920318724,
+       "deletion_risk": 0.15492957746478872,
+       "invention_risk": 0.12318840579710146,
+       "accepted": 138,
+       "accepted_positive": 71
+      }
+     },
+     "bilinear": {
+      "threshold": 3.5089846215592613,
+      "test": {
+       "coverage": 0.14940239043824702,
+       "deletion_risk": 0.20987654320987653,
+       "invention_risk": 0.14666666666666667,
+       "accepted": 150,
+       "accepted_positive": 81
+      }
+     },
+     "bicubic": {
+      "threshold": 3.5462708773465423,
+      "test": {
+       "coverage": 0.1553784860557769,
+       "deletion_risk": 0.1794871794871795,
+       "invention_risk": 0.12179487179487179,
+       "accepted": 156,
+       "accepted_positive": 78
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 3.7493674848477294,
+      "test": {
+       "coverage": 0.15836653386454183,
+       "deletion_risk": 0.18518518518518517,
+       "invention_risk": 0.1320754716981132,
+       "accepted": 159,
+       "accepted_positive": 81
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 2.8923905519535875,
+      "test": {
+       "coverage": 0.1294820717131474,
+       "deletion_risk": 0.2,
+       "invention_risk": 0.09230769230769231,
+       "accepted": 130,
+       "accepted_positive": 70
+      }
+     },
+     "learned": {
+      "threshold": 3.118179708536349,
+      "test": {
+       "coverage": 0.12749003984063745,
+       "deletion_risk": 0.14285714285714285,
+       "invention_risk": 0.2265625,
+       "accepted": 128,
+       "accepted_positive": 70
+      }
+     },
+     "restoration_pool": {
+      "threshold": 2.409228202883548,
+      "test": {
+       "coverage": 0.14940239043824702,
+       "deletion_risk": 0.1951219512195122,
+       "invention_risk": 0.17333333333333334,
+       "accepted": 150,
+       "accepted_positive": 82
+      }
+     },
+     "action_pool": {
+      "threshold": 1.9492439847229515,
+      "test": {
+       "coverage": 0.12151394422310757,
+       "deletion_risk": 0.16,
+       "invention_risk": 0.1885245901639344,
+       "accepted": 122,
+       "accepted_positive": 75
+      }
+     }
+    }
+   },
+   {
+    "seed": 207,
+    "tuning_selected": "unsharp_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 171,
+     "bilinear": 174,
+     "bicubic": 173,
+     "smooth_bicubic": 174,
+     "unsharp_bicubic": 172,
+     "learned": 171,
+     "restoration_pool": 172,
+     "action_pool": 172
+    },
+    "n_hold": 416,
+    "n_test": 1004,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 2.991421230287263,
+      "test": {
+       "coverage": 0.16733067729083664,
+       "deletion_risk": 0.18666666666666668,
+       "invention_risk": 0.24404761904761904,
+       "accepted": 168,
+       "accepted_positive": 75
+      }
+     },
+     "bilinear": {
+      "threshold": 4.483670413544191,
+      "test": {
+       "coverage": 0.24302788844621515,
+       "deletion_risk": 0.23595505617977527,
+       "invention_risk": 0.2827868852459016,
+       "accepted": 244,
+       "accepted_positive": 89
+      }
+     },
+     "bicubic": {
+      "threshold": 3.7633156387005893,
+      "test": {
+       "coverage": 0.21314741035856574,
+       "deletion_risk": 0.24705882352941178,
+       "invention_risk": 0.19158878504672897,
+       "accepted": 214,
+       "accepted_positive": 85
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 4.086894719936584,
+      "test": {
+       "coverage": 0.21812749003984064,
+       "deletion_risk": 0.23863636363636365,
+       "invention_risk": 0.319634703196347,
+       "accepted": 219,
+       "accepted_positive": 88
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 3.8160272961292314,
+      "test": {
+       "coverage": 0.19223107569721115,
+       "deletion_risk": 0.25,
+       "invention_risk": 0.12953367875647667,
+       "accepted": 193,
+       "accepted_positive": 84
+      }
+     },
+     "learned": {
+      "threshold": 4.410738818739832,
+      "test": {
+       "coverage": 0.27589641434262946,
+       "deletion_risk": 0.1875,
+       "invention_risk": 0.30324909747292417,
+       "accepted": 277,
+       "accepted_positive": 80
+      }
+     },
+     "restoration_pool": {
+      "threshold": 3.2718578531532057,
+      "test": {
+       "coverage": 0.2539840637450199,
+       "deletion_risk": 0.23076923076923078,
+       "invention_risk": 0.2901960784313726,
+       "accepted": 255,
+       "accepted_positive": 91
+      }
+     },
+     "action_pool": {
+      "threshold": 2.8981871440469793,
+      "test": {
+       "coverage": 0.2051792828685259,
+       "deletion_risk": 0.20238095238095238,
+       "invention_risk": 0.28640776699029125,
+       "accepted": 206,
+       "accepted_positive": 84
+      }
+     }
+    }
+   },
+   {
+    "seed": 211,
+    "tuning_selected": "smooth_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 168,
+     "bilinear": 173,
+     "bicubic": 172,
+     "smooth_bicubic": 174,
+     "unsharp_bicubic": 173,
+     "learned": 170,
+     "restoration_pool": 173,
+     "action_pool": 173
+    },
+    "n_hold": 416,
+    "n_test": 1004,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 2.6940348215216154,
+      "test": {
+       "coverage": 0.21115537848605578,
+       "deletion_risk": 0.1388888888888889,
+       "invention_risk": 0.11320754716981132,
+       "accepted": 212,
+       "accepted_positive": 72
+      }
+     },
+     "bilinear": {
+      "threshold": 3.6267665197266497,
+      "test": {
+       "coverage": 0.2151394422310757,
+       "deletion_risk": 0.1625,
+       "invention_risk": 0.18518518518518517,
+       "accepted": 216,
+       "accepted_positive": 80
+      }
+     },
+     "bicubic": {
+      "threshold": 2.2559516817492122,
+      "test": {
+       "coverage": 0.17131474103585656,
+       "deletion_risk": 0.13333333333333333,
+       "invention_risk": 0.12209302325581395,
+       "accepted": 172,
+       "accepted_positive": 60
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 3.8808598343965204,
+      "test": {
+       "coverage": 0.2051792828685259,
+       "deletion_risk": 0.15584415584415584,
+       "invention_risk": 0.18446601941747573,
+       "accepted": 206,
+       "accepted_positive": 77
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 3.06648722413631,
+      "test": {
+       "coverage": 0.1394422310756972,
+       "deletion_risk": 0.18181818181818182,
+       "invention_risk": 0.07142857142857142,
+       "accepted": 140,
+       "accepted_positive": 66
+      }
+     },
+     "learned": {
+      "threshold": 5.303780986808259,
+      "test": {
+       "coverage": 0.43725099601593626,
+       "deletion_risk": 0.19791666666666666,
+       "invention_risk": 0.35079726651480636,
+       "accepted": 439,
+       "accepted_positive": 96
+      }
+     },
+     "restoration_pool": {
+      "threshold": 2.0194910274729945,
+      "test": {
+       "coverage": 0.1952191235059761,
+       "deletion_risk": 0.13513513513513514,
+       "invention_risk": 0.14795918367346939,
+       "accepted": 196,
+       "accepted_positive": 74
+      }
+     },
+     "action_pool": {
+      "threshold": 1.9036313817192918,
+      "test": {
+       "coverage": 0.20119521912350596,
+       "deletion_risk": 0.15584415584415584,
+       "invention_risk": 0.12871287128712872,
+       "accepted": 202,
+       "accepted_positive": 77
+      }
+     }
+    }
+   },
+   {
+    "seed": 223,
+    "tuning_selected": "unsharp_bicubic",
+    "checks": {
+     "fs_single_raw_nearest": true,
+     "marginal_raw_nearest": true,
+     "fs_single_bilinear": true,
+     "marginal_bilinear": true,
+     "fs_single_bicubic": true,
+     "marginal_bicubic": true,
+     "fs_single_smooth_bicubic": true,
+     "marginal_smooth_bicubic": true,
+     "fs_single_unsharp_bicubic": true,
+     "marginal_unsharp_bicubic": true,
+     "fs_single_learned": true,
+     "marginal_learned": true,
+     "fs_single_restoration_pool": true,
+     "marginal_restoration_pool": true,
+     "fs_single_action_pool": true,
+     "marginal_action_pool": true,
+     "fs_portfolio_selection": true,
+     "tuning_selected_policy": true,
+     "tuning_selected_qualified": 1.0
+    },
+    "methods": {
+     "naive": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "marginal": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "ltt_bonf": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "sgr": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_tuning_sel": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fallback": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_hb": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_asc": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "fs_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     },
+     "holm_iut": {
+      "single": {
+       "raw_nearest": null,
+       "bilinear": null,
+       "bicubic": null,
+       "smooth_bicubic": null,
+       "unsharp_bicubic": null,
+       "learned": null,
+       "restoration_pool": null,
+       "action_pool": null
+      },
+      "portfolio": null
+     }
+    },
+    "grid_sizes": {
+     "raw_nearest": 174,
+     "bilinear": 173,
+     "bicubic": 171,
+     "smooth_bicubic": 174,
+     "unsharp_bicubic": 174,
+     "learned": 171,
+     "restoration_pool": 174,
+     "action_pool": 174
+    },
+    "n_hold": 416,
+    "n_test": 1004,
+    "crc": {
+     "raw_nearest": {
+      "threshold": 2.809250548299406,
+      "test": {
+       "coverage": 0.1752988047808765,
+       "deletion_risk": 0.14666666666666667,
+       "invention_risk": 0.20454545454545456,
+       "accepted": 176,
+       "accepted_positive": 75
+      }
+     },
+     "bilinear": {
+      "threshold": 3.2937673548459947,
+      "test": {
+       "coverage": 0.19223107569721115,
+       "deletion_risk": 0.1518987341772152,
+       "invention_risk": 0.27461139896373055,
+       "accepted": 193,
+       "accepted_positive": 79
+      }
+     },
+     "bicubic": {
+      "threshold": 2.1801379560917282,
+      "test": {
+       "coverage": 0.14043824701195218,
+       "deletion_risk": 0.15151515151515152,
+       "invention_risk": 0.12056737588652482,
+       "accepted": 141,
+       "accepted_positive": 66
+      }
+     },
+     "smooth_bicubic": {
+      "threshold": 3.3344631429311087,
+      "test": {
+       "coverage": 0.19123505976095617,
+       "deletion_risk": 0.15,
+       "invention_risk": 0.22395833333333334,
+       "accepted": 192,
+       "accepted_positive": 80
+      }
+     },
+     "unsharp_bicubic": {
+      "threshold": 2.6637612206845955,
+      "test": {
+       "coverage": 0.09760956175298804,
+       "deletion_risk": 0.20634920634920634,
+       "invention_risk": 0.09183673469387756,
+       "accepted": 98,
+       "accepted_positive": 63
+      }
+     },
+     "learned": {
+      "threshold": 3.6740754880133726,
+      "test": {
+       "coverage": 0.24302788844621515,
+       "deletion_risk": 0.13333333333333333,
+       "invention_risk": 0.25,
+       "accepted": 244,
+       "accepted_positive": 75
+      }
+     },
+     "restoration_pool": {
+      "threshold": 1.8667290578974658,
+      "test": {
+       "coverage": 0.15836653386454183,
+       "deletion_risk": 0.17333333333333334,
+       "invention_risk": 0.1320754716981132,
+       "accepted": 159,
+       "accepted_positive": 75
+      }
+     },
+     "action_pool": {
+      "threshold": 1.8667290578974658,
+      "test": {
+       "coverage": 0.16135458167330677,
+       "deletion_risk": 0.18421052631578946,
+       "invention_risk": 0.13580246913580246,
+       "accepted": 162,
+       "accepted_positive": 76
+      }
+     }
+    }
+   }
+  ]
+ }
+}

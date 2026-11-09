@@ -1,0 +1,11 @@
+domain,seed,qualification_n,qualification_positives,tuning_n,tuning_positives,holdout_n,holdout_positives,test_n,test_positives
+carinthia_s,201,461,438,132,128,329,310,446,430
+carinthia_s,203,461,438,132,128,329,310,446,430
+carinthia_s,207,461,438,132,128,329,310,446,430
+carinthia_s,211,461,438,132,128,329,310,446,430
+carinthia_s,223,461,438,132,128,329,310,446,430
+kolektor_sdd2,201,604,109,188,36,416,73,1004,110
+kolektor_sdd2,203,604,109,188,36,416,73,1004,110
+kolektor_sdd2,207,604,109,188,36,416,73,1004,110
+kolektor_sdd2,211,604,109,188,36,416,73,1004,110
+kolektor_sdd2,223,604,109,188,36,416,73,1004,110

@@ -1,0 +1,142 @@
+{
+  "carinthia_s": {
+    "0.25": {
+      "floor": 0.25,
+      "repetitions": 5,
+      "policies": {
+        "raw_nearest": {
+          "legacy_marginal_passes": 2,
+          "familywise_single_certified": 4,
+          "familywise_single_mean_test_coverage": 0.32230941704035876
+        },
+        "bilinear": {
+          "legacy_marginal_passes": 2,
+          "familywise_single_certified": 4,
+          "familywise_single_mean_test_coverage": 0.4321748878923767
+        },
+        "bicubic": {
+          "legacy_marginal_passes": 3,
+          "familywise_single_certified": 4,
+          "familywise_single_mean_test_coverage": 0.3654708520179372
+        },
+        "smooth_bicubic": {
+          "legacy_marginal_passes": 2,
+          "familywise_single_certified": 4,
+          "familywise_single_mean_test_coverage": 0.38284753363228696
+        },
+        "unsharp_bicubic": {
+          "legacy_marginal_passes": 1,
+          "familywise_single_certified": 4,
+          "familywise_single_mean_test_coverage": 0.41087443946188346
+        },
+        "learned": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 1,
+          "familywise_single_mean_test_coverage": 0.26905829596412556
+        },
+        "restoration_pool": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 3,
+          "familywise_single_mean_test_coverage": 0.46263079222720477
+        },
+        "action_pool": {
+          "legacy_marginal_passes": 1,
+          "familywise_single_certified": 3,
+          "familywise_single_mean_test_coverage": 0.3550074738415545
+        }
+      },
+      "portfolio_selections": [
+        "unsharp_bicubic",
+        "bilinear",
+        "action_pool",
+        "restoration_pool",
+        "unsharp_bicubic"
+      ],
+      "portfolio_certified_repetitions": 5,
+      "portfolio_selected_test_coverage": [
+        0.3430493273542601,
+        0.4349775784753363,
+        0.4080717488789238,
+        0.5269058295964125,
+        0.484304932735426
+      ],
+      "tuning_selected_policies": [
+        "bilinear",
+        "bilinear",
+        "smooth_bicubic",
+        "restoration_pool",
+        "smooth_bicubic"
+      ],
+      "tuning_selected_certified": 4,
+      "tuning_selected_test_coverage": [
+        0.3968609865470852,
+        0.4349775784753363,
+        null,
+        0.5269058295964125,
+        0.4641255605381166
+      ]
+    }
+  },
+  "kolektor_sdd2": {
+    "0.25": {
+      "floor": 0.25,
+      "repetitions": 1,
+      "policies": {
+        "raw_nearest": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "bilinear": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "bicubic": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "smooth_bicubic": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "unsharp_bicubic": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "learned": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "restoration_pool": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        },
+        "action_pool": {
+          "legacy_marginal_passes": 0,
+          "familywise_single_certified": 0,
+          "familywise_single_mean_test_coverage": 0.0
+        }
+      },
+      "portfolio_selections": [
+        null
+      ],
+      "portfolio_certified_repetitions": 0,
+      "portfolio_selected_test_coverage": [
+        null
+      ],
+      "tuning_selected_policies": [
+        "unsharp_bicubic"
+      ],
+      "tuning_selected_certified": 0,
+      "tuning_selected_test_coverage": [
+        null
+      ]
+    }
+  }
+}

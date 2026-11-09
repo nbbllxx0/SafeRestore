@@ -1,0 +1,7 @@
+alpha,allocation,endpoint_level,e0,e1,e2,e3,e4,e5
+0.1,single_delta/2,0.05,29,46,61,76,89,103
+0.1,portfolio_delta/16,0.00625,49,69,87,103,119,134
+0.15,single_delta/2,0.05,19,30,40,50,59,68
+0.15,portfolio_delta/16,0.00625,32,45,57,68,78,88
+0.2,single_delta/2,0.05,14,22,30,37,44,50
+0.2,portfolio_delta/16,0.00625,23,33,42,50,58,65

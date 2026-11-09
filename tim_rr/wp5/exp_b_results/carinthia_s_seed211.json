@@ -1,0 +1,1224 @@
+{
+ "seed": 211,
+ "deletion_recall_floor": 0.25,
+ "tuning_n": 132,
+ "certification_n": 329,
+ "legacy_marginal": {
+  "seed": 211,
+  "deletion_recall_floor": 0.25,
+  "invention_fpr_limit": 0.002,
+  "targets": {
+   "deletion": 0.15,
+   "invention": 0.15,
+   "delta": 0.1,
+   "tuning_margin": 0.5,
+   "min_accept": 15,
+   "min_positive_accept": 15
+  },
+  "sampling_assumption": "Certification observations are independent and identically distributed image-level units from the nominal population; thresholds are fixed on a disjoint tuning subset.",
+  "tuning_n": 132,
+  "certification_n": 329,
+  "policies": {
+   "raw_nearest": {
+    "threshold": 5.265639393659565,
+    "tuning": {
+     "n": 132,
+     "accepted": 109,
+     "reviewed": 23,
+     "coverage": 0.8257575757575758,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 109,
+     "accepted_clean": 0,
+     "positive_coverage": 0.8515625,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.008515625,
+      "0.10": 0.08515625,
+      "0.50": 0.42578125
+     },
+     "deletion_denominator": 109,
+     "invention_denominator": 109,
+     "deletion_errors": 0,
+     "invention_errors": 8,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.07339449541284404,
+     "method_counts": {
+      "raw_nearest": 109
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 287,
+     "reviewed": 42,
+     "coverage": 0.8723404255319149,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 286,
+     "accepted_clean": 1,
+     "positive_coverage": 0.9225806451612903,
+     "clean_coverage": 0.05263157894736842,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.061331069609507634,
+      "0.10": 0.13962648556876062,
+      "0.50": 0.48760611205432935
+     },
+     "deletion_denominator": 286,
+     "invention_denominator": 287,
+     "deletion_errors": 0,
+     "invention_errors": 35,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.12195121951219512,
+     "deletion_ucb": 0.01041992090786355,
+     "invention_ucb": 0.15842086044410064,
+     "passes": false,
+     "method_counts": {
+      "raw_nearest": 287
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 389,
+     "reviewed": 57,
+     "coverage": 0.8721973094170403,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 386,
+     "accepted_clean": 3,
+     "positive_coverage": 0.8976744186046511,
+     "clean_coverage": 0.1875,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.1946017441860465,
+      "0.10": 0.2585174418604651,
+      "0.50": 0.5425872093023256
+     },
+     "deletion_denominator": 386,
+     "invention_denominator": 389,
+     "deletion_errors": 0,
+     "invention_errors": 59,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.15167095115681234,
+     "method_counts": {
+      "raw_nearest": 389
+     },
+     "deployable_coverage": 0.0,
+     "deployable_positive_coverage": 0.0,
+     "deployable_clean_coverage": 0.0
+    },
+    "shift_diagnostic": null
+   },
+   "smooth_bicubic": {
+    "threshold": 4.457822769268838,
+    "tuning": {
+     "n": 132,
+     "accepted": 96,
+     "reviewed": 36,
+     "coverage": 0.7272727272727273,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 96,
+     "accepted_clean": 0,
+     "positive_coverage": 0.75,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.0075,
+      "0.10": 0.07500000000000001,
+      "0.50": 0.375
+     },
+     "deletion_denominator": 96,
+     "invention_denominator": 96,
+     "deletion_errors": 0,
+     "invention_errors": 7,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.07291666666666667,
+     "method_counts": {
+      "smooth_bicubic": 96
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 255,
+     "reviewed": 74,
+     "coverage": 0.7750759878419453,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 255,
+     "accepted_clean": 0,
+     "positive_coverage": 0.8225806451612904,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.008225806451612904,
+      "0.10": 0.08225806451612905,
+      "0.50": 0.4112903225806452
+     },
+     "deletion_denominator": 255,
+     "invention_denominator": 255,
+     "deletion_errors": 0,
+     "invention_errors": 27,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.10588235294117647,
+     "deletion_ucb": 0.011679231744630135,
+     "invention_ucb": 0.14305037365998058,
+     "passes": true,
+     "method_counts": {
+      "smooth_bicubic": 255
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 344,
+     "reviewed": 102,
+     "coverage": 0.7713004484304933,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 344,
+     "accepted_clean": 0,
+     "positive_coverage": 0.8,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.008,
+      "0.10": 0.08000000000000002,
+      "0.50": 0.4
+     },
+     "deletion_denominator": 344,
+     "invention_denominator": 344,
+     "deletion_errors": 0,
+     "invention_errors": 55,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.15988372093023256,
+     "method_counts": {
+      "smooth_bicubic": 344
+     },
+     "deployable_coverage": 0.7713004484304933,
+     "deployable_positive_coverage": 0.8,
+     "deployable_clean_coverage": 0.0
+    },
+    "shift_diagnostic": null
+   },
+   "unsharp_bicubic": {
+    "threshold": 4.065908608376233,
+    "tuning": {
+     "n": 132,
+     "accepted": 95,
+     "reviewed": 37,
+     "coverage": 0.7196969696969697,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 95,
+     "accepted_clean": 0,
+     "positive_coverage": 0.7421875,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.0074218750000000005,
+      "0.10": 0.07421875,
+      "0.50": 0.37109375
+     },
+     "deletion_denominator": 95,
+     "invention_denominator": 95,
+     "deletion_errors": 0,
+     "invention_errors": 7,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.07368421052631578,
+     "method_counts": {
+      "unsharp_bicubic": 95
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 254,
+     "reviewed": 75,
+     "coverage": 0.7720364741641338,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 254,
+     "accepted_clean": 0,
+     "positive_coverage": 0.8193548387096774,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.008193548387096775,
+      "0.10": 0.08193548387096775,
+      "0.50": 0.4096774193548387
+     },
+     "deletion_denominator": 254,
+     "invention_denominator": 254,
+     "deletion_errors": 0,
+     "invention_errors": 19,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.07480314960629922,
+     "deletion_ucb": 0.011724942350669808,
+     "invention_ucb": 0.10783073993522198,
+     "passes": true,
+     "method_counts": {
+      "unsharp_bicubic": 254
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 342,
+     "reviewed": 104,
+     "coverage": 0.7668161434977578,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 342,
+     "accepted_clean": 0,
+     "positive_coverage": 0.7953488372093023,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.007953488372093023,
+      "0.10": 0.07953488372093023,
+      "0.50": 0.39767441860465114
+     },
+     "deletion_denominator": 342,
+     "invention_denominator": 342,
+     "deletion_errors": 0,
+     "invention_errors": 41,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.11988304093567251,
+     "method_counts": {
+      "unsharp_bicubic": 342
+     },
+     "deployable_coverage": 0.7668161434977578,
+     "deployable_positive_coverage": 0.7953488372093023,
+     "deployable_clean_coverage": 0.0
+    },
+    "shift_diagnostic": null
+   },
+   "learned": {
+    "threshold": 3.228144052512704,
+    "tuning": {
+     "n": 132,
+     "accepted": 67,
+     "reviewed": 65,
+     "coverage": 0.5075757575757576,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 67,
+     "accepted_clean": 0,
+     "positive_coverage": 0.5234375,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.005234375,
+      "0.10": 0.05234375,
+      "0.50": 0.26171875
+     },
+     "deletion_denominator": 67,
+     "invention_denominator": 67,
+     "deletion_errors": 1,
+     "invention_errors": 5,
+     "deletion_risk": 0.014925373134328358,
+     "invention_risk": 0.07462686567164178,
+     "method_counts": {
+      "learned": 67
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 149,
+     "reviewed": 180,
+     "coverage": 0.45288753799392095,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 149,
+     "accepted_clean": 0,
+     "positive_coverage": 0.4806451612903226,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.004806451612903226,
+      "0.10": 0.04806451612903226,
+      "0.50": 0.2403225806451613
+     },
+     "deletion_denominator": 149,
+     "invention_denominator": 149,
+     "deletion_errors": 2,
+     "invention_errors": 10,
+     "deletion_risk": 0.013422818791946308,
+     "invention_risk": 0.06711409395973154,
+     "deletion_ucb": 0.04164864793729948,
+     "invention_ucb": 0.11118112713664216,
+     "passes": true,
+     "method_counts": {
+      "learned": 149
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 197,
+     "reviewed": 249,
+     "coverage": 0.44170403587443946,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 197,
+     "accepted_clean": 0,
+     "positive_coverage": 0.45813953488372094,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.004581395348837209,
+      "0.10": 0.0458139534883721,
+      "0.50": 0.22906976744186047
+     },
+     "deletion_denominator": 197,
+     "invention_denominator": 197,
+     "deletion_errors": 1,
+     "invention_errors": 16,
+     "deletion_risk": 0.005076142131979695,
+     "invention_risk": 0.08121827411167512,
+     "method_counts": {
+      "learned": 197
+     },
+     "deployable_coverage": 0.44170403587443946,
+     "deployable_positive_coverage": 0.45813953488372094,
+     "deployable_clean_coverage": 0.0
+    },
+    "shift_diagnostic": null
+   },
+   "restoration_pool": {
+    "threshold": 4.513282482441994,
+    "tuning": {
+     "n": 132,
+     "accepted": 103,
+     "reviewed": 29,
+     "coverage": 0.7803030303030303,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 103,
+     "accepted_clean": 0,
+     "positive_coverage": 0.8046875,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.008046875,
+      "0.10": 0.08046875,
+      "0.50": 0.40234375
+     },
+     "deletion_denominator": 103,
+     "invention_denominator": 103,
+     "deletion_errors": 0,
+     "invention_errors": 7,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.06796116504854369,
+     "method_counts": {
+      "learned": 12,
+      "smooth_bicubic": 23,
+      "unsharp_bicubic": 68
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 281,
+     "reviewed": 48,
+     "coverage": 0.8541033434650456,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 281,
+     "accepted_clean": 0,
+     "positive_coverage": 0.9064516129032258,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.009064516129032259,
+      "0.10": 0.09064516129032259,
+      "0.50": 0.4532258064516129
+     },
+     "deletion_denominator": 281,
+     "invention_denominator": 281,
+     "deletion_errors": 0,
+     "invention_errors": 31,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.1103202846975089,
+     "deletion_ucb": 0.010604342226155734,
+     "invention_ucb": 0.14597698624635427,
+     "passes": true,
+     "method_counts": {
+      "learned": 39,
+      "smooth_bicubic": 61,
+      "unsharp_bicubic": 181
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 382,
+     "reviewed": 64,
+     "coverage": 0.8565022421524664,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 381,
+     "accepted_clean": 1,
+     "positive_coverage": 0.8860465116279069,
+     "clean_coverage": 0.0625,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.07073546511627907,
+      "0.10": 0.1448546511627907,
+      "0.50": 0.47427325581395346
+     },
+     "deletion_denominator": 381,
+     "invention_denominator": 382,
+     "deletion_errors": 0,
+     "invention_errors": 56,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.14659685863874344,
+     "method_counts": {
+      "learned": 57,
+      "smooth_bicubic": 91,
+      "unsharp_bicubic": 234
+     },
+     "deployable_coverage": 0.8565022421524664,
+     "deployable_positive_coverage": 0.8860465116279069,
+     "deployable_clean_coverage": 0.0625
+    },
+    "shift_diagnostic": null
+   },
+   "action_pool": {
+    "threshold": 4.5763986670322945,
+    "tuning": {
+     "n": 132,
+     "accepted": 108,
+     "reviewed": 24,
+     "coverage": 0.8181818181818182,
+     "positive_n": 128,
+     "clean_n": 4,
+     "accepted_positive": 108,
+     "accepted_clean": 0,
+     "positive_coverage": 0.84375,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.0084375,
+      "0.10": 0.084375,
+      "0.50": 0.421875
+     },
+     "deletion_denominator": 108,
+     "invention_denominator": 108,
+     "deletion_errors": 0,
+     "invention_errors": 8,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.07407407407407407,
+     "method_counts": {
+      "learned": 12,
+      "raw_nearest": 12,
+      "smooth_bicubic": 19,
+      "unsharp_bicubic": 65
+     }
+    },
+    "certificate": {
+     "n": 329,
+     "accepted": 287,
+     "reviewed": 42,
+     "coverage": 0.8723404255319149,
+     "positive_n": 310,
+     "clean_n": 19,
+     "accepted_positive": 287,
+     "accepted_clean": 0,
+     "positive_coverage": 0.9258064516129032,
+     "clean_coverage": 0.0,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.009258064516129032,
+      "0.10": 0.09258064516129033,
+      "0.50": 0.4629032258064516
+     },
+     "deletion_denominator": 287,
+     "invention_denominator": 287,
+     "deletion_errors": 0,
+     "invention_errors": 31,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.10801393728222997,
+     "deletion_ucb": 0.010383803719215767,
+     "invention_ucb": 0.14298566014893607,
+     "passes": true,
+     "method_counts": {
+      "learned": 38,
+      "raw_nearest": 33,
+      "smooth_bicubic": 50,
+      "unsharp_bicubic": 166
+     }
+    },
+    "test": {
+     "n": 446,
+     "accepted": 388,
+     "reviewed": 58,
+     "coverage": 0.8699551569506726,
+     "positive_n": 430,
+     "clean_n": 16,
+     "accepted_positive": 386,
+     "accepted_clean": 2,
+     "positive_coverage": 0.8976744186046511,
+     "clean_coverage": 0.125,
+     "prevalence_standardized_coverage": {
+      "0.01": 0.13272674418604652,
+      "0.10": 0.20226744186046514,
+      "0.50": 0.5113372093023256
+     },
+     "deletion_denominator": 386,
+     "invention_denominator": 388,
+     "deletion_errors": 0,
+     "invention_errors": 55,
+     "deletion_risk": 0.0,
+     "invention_risk": 0.14175257731958762,
+     "method_counts": {
+      "learned": 52,
+      "raw_nearest": 62,
+      "smooth_bicubic": 69,
+      "unsharp_bicubic": 205
+     },
+     "deployable_coverage": 0.8699551569506726,
+     "deployable_positive_coverage": 0.8976744186046511,
+     "deployable_clean_coverage": 0.125
+    },
+    "shift_diagnostic": null
+   }
+  },
+  "certificate_size_sensitivity": [
+   {
+    "fraction": 0.25,
+    "n": 77,
+    "accepted": 65,
+    "reviewed": 12,
+    "coverage": 0.8441558441558441,
+    "positive_n": 71,
+    "clean_n": 6,
+    "accepted_positive": 65,
+    "accepted_clean": 0,
+    "positive_coverage": 0.9154929577464789,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.009154929577464789,
+     "0.10": 0.09154929577464789,
+     "0.50": 0.45774647887323944
+    },
+    "deletion_denominator": 65,
+    "invention_denominator": 65,
+    "deletion_errors": 0,
+    "invention_errors": 7,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.1076923076923077,
+    "deletion_ucb": 0.04504225812301352,
+    "invention_ucb": 0.1927780559692274,
+    "passes": false
+   },
+   {
+    "fraction": 0.5,
+    "n": 155,
+    "accepted": 136,
+    "reviewed": 19,
+    "coverage": 0.8774193548387097,
+    "positive_n": 146,
+    "clean_n": 9,
+    "accepted_positive": 136,
+    "accepted_clean": 0,
+    "positive_coverage": 0.9315068493150684,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.009315068493150684,
+     "0.10": 0.09315068493150686,
+     "0.50": 0.4657534246575342
+    },
+    "deletion_denominator": 136,
+    "invention_denominator": 136,
+    "deletion_errors": 0,
+    "invention_errors": 19,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.13970588235294118,
+    "deletion_ucb": 0.021786610611001896,
+    "invention_ucb": 0.19822270279363366,
+    "passes": false
+   },
+   {
+    "fraction": 0.75,
+    "n": 242,
+    "accepted": 207,
+    "reviewed": 35,
+    "coverage": 0.8553719008264463,
+    "positive_n": 225,
+    "clean_n": 17,
+    "accepted_positive": 207,
+    "accepted_clean": 0,
+    "positive_coverage": 0.92,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.0092,
+     "0.10": 0.09200000000000001,
+     "0.50": 0.46
+    },
+    "deletion_denominator": 207,
+    "invention_denominator": 207,
+    "deletion_errors": 0,
+    "invention_errors": 24,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.11594202898550725,
+    "deletion_ucb": 0.014367918576685021,
+    "invention_ucb": 0.15916680219724222,
+    "passes": false
+   },
+   {
+    "fraction": 1.0,
+    "n": 329,
+    "accepted": 287,
+    "reviewed": 42,
+    "coverage": 0.8723404255319149,
+    "positive_n": 310,
+    "clean_n": 19,
+    "accepted_positive": 287,
+    "accepted_clean": 0,
+    "positive_coverage": 0.9258064516129032,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.009258064516129032,
+     "0.10": 0.09258064516129033,
+     "0.50": 0.4629032258064516
+    },
+    "deletion_denominator": 287,
+    "invention_denominator": 287,
+    "deletion_errors": 0,
+    "invention_errors": 31,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.10801393728222997,
+    "deletion_ucb": 0.010383803719215767,
+    "invention_ucb": 0.14298566014893607,
+    "passes": true
+   }
+  ]
+ },
+ "familywise_single_policy": {
+  "raw_nearest": {
+   "certified_threshold": 4.731498953915705,
+   "certified_count": 52,
+   "tested_count": 53,
+   "sequence_start_threshold": 2.1696918396321703,
+   "deletion_errors": 0,
+   "deletion_denominator": 274,
+   "deletion_ucb": 0.010873777849002236,
+   "invention_errors": 30,
+   "invention_denominator": 275,
+   "invention_ucb": 0.14505043594500905,
+   "accepted": 275,
+   "coverage": 0.8358662613981763,
+   "delta_alloc": 0.1,
+   "first_failure": {
+    "threshold": 5.240657662235211,
+    "deletion_errors": 0,
+    "deletion_denominator": 286,
+    "deletion_ucb": 0.01041992090786355,
+    "invention_errors": 35,
+    "invention_denominator": 287,
+    "invention_ucb": 0.15842086044410064
+   },
+   "min_certifiable_alpha_descriptive": 0.03104201186795486,
+   "min_certifiable_alpha_threshold": 2.29703960096497,
+   "test": {
+    "n": 446,
+    "accepted": 374,
+    "reviewed": 72,
+    "coverage": 0.8385650224215246,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 372,
+    "accepted_clean": 2,
+    "positive_coverage": 0.8651162790697674,
+    "clean_coverage": 0.125,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.13240116279069766,
+     "0.10": 0.19901162790697674,
+     "0.50": 0.4950581395348837
+    },
+    "deletion_denominator": 372,
+    "invention_denominator": 374,
+    "deletion_errors": 0,
+    "invention_errors": 56,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.1497326203208556,
+    "method_counts": {
+     "raw_nearest": 374
+    }
+   }
+  },
+  "smooth_bicubic": {
+   "certified_threshold": 4.457822769268838,
+   "certified_count": 55,
+   "tested_count": 56,
+   "sequence_start_threshold": 2.7236149147629347,
+   "deletion_errors": 0,
+   "deletion_denominator": 255,
+   "deletion_ucb": 0.011679231744630135,
+   "invention_errors": 27,
+   "invention_denominator": 255,
+   "invention_ucb": 0.14305037365998058,
+   "accepted": 255,
+   "coverage": 0.7750759878419453,
+   "delta_alloc": 0.1,
+   "first_failure": {
+    "threshold": 5.451443318202513,
+    "deletion_errors": 0,
+    "deletion_denominator": 286,
+    "deletion_ucb": 0.01041992090786355,
+    "invention_errors": 34,
+    "invention_denominator": 286,
+    "invention_ucb": 0.1551043219194
+   },
+   "min_certifiable_alpha_descriptive": 0.06119704052584383,
+   "min_certifiable_alpha_threshold": 2.9144265677617707,
+   "test": {
+    "n": 446,
+    "accepted": 344,
+    "reviewed": 102,
+    "coverage": 0.7713004484304933,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 344,
+    "accepted_clean": 0,
+    "positive_coverage": 0.8,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.008,
+     "0.10": 0.08000000000000002,
+     "0.50": 0.4
+    },
+    "deletion_denominator": 344,
+    "invention_denominator": 344,
+    "deletion_errors": 0,
+    "invention_errors": 55,
+    "deletion_risk": 0.0,
+    "invention_risk": 0.15988372093023256,
+    "method_counts": {
+     "smooth_bicubic": 344
+    }
+   }
+  },
+  "unsharp_bicubic": {
+   "certified_threshold": 6.666586255921886,
+   "certified_count": 118,
+   "tested_count": 118,
+   "sequence_start_threshold": 1.856368829897526,
+   "deletion_errors": 0,
+   "deletion_denominator": 308,
+   "deletion_ucb": 0.009679255008705265,
+   "invention_errors": 35,
+   "invention_denominator": 327,
+   "invention_ucb": 0.13939821530994362,
+   "accepted": 327,
+   "coverage": 0.993920972644377,
+   "delta_alloc": 0.1,
+   "min_certifiable_alpha_descriptive": 0.04566359632764001,
+   "min_certifiable_alpha_threshold": 2.0108044354231898,
+   "test": {
+    "n": 446,
+    "accepted": 444,
+    "reviewed": 2,
+    "coverage": 0.9955156950672646,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 428,
+    "accepted_clean": 16,
+    "positive_coverage": 0.9953488372093023,
+    "clean_coverage": 1.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.999953488372093,
+     "0.10": 0.9995348837209302,
+     "0.50": 0.9976744186046511
+    },
+    "deletion_denominator": 428,
+    "invention_denominator": 444,
+    "deletion_errors": 2,
+    "invention_errors": 67,
+    "deletion_risk": 0.004672897196261682,
+    "invention_risk": 0.15090090090090091,
+    "method_counts": {
+     "unsharp_bicubic": 444
+    }
+   }
+  },
+  "learned": {
+   "certified_threshold": 3.7040475117731138,
+   "certified_count": 54,
+   "tested_count": 55,
+   "sequence_start_threshold": 2.719938232845166,
+   "deletion_errors": 2,
+   "deletion_denominator": 175,
+   "deletion_ucb": 0.03553694035434429,
+   "invention_errors": 17,
+   "invention_denominator": 175,
+   "invention_ucb": 0.14214740663092534,
+   "accepted": 175,
+   "coverage": 0.5319148936170213,
+   "delta_alloc": 0.1,
+   "first_failure": {
+    "threshold": 5.373021462286614,
+    "deletion_errors": 7,
+    "deletion_denominator": 268,
+    "deletion_ucb": 0.048498395156854536,
+    "invention_errors": 49,
+    "invention_denominator": 271,
+    "invention_ucb": 0.2236724456469027
+   },
+   "min_certifiable_alpha_descriptive": 0.09078076362631626,
+   "min_certifiable_alpha_threshold": 2.72892409675293,
+   "test": {
+    "n": 446,
+    "accepted": 240,
+    "reviewed": 206,
+    "coverage": 0.5381165919282511,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 240,
+    "accepted_clean": 0,
+    "positive_coverage": 0.5581395348837209,
+    "clean_coverage": 0.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.005581395348837209,
+     "0.10": 0.05581395348837209,
+     "0.50": 0.27906976744186046
+    },
+    "deletion_denominator": 240,
+    "invention_denominator": 240,
+    "deletion_errors": 3,
+    "invention_errors": 28,
+    "deletion_risk": 0.0125,
+    "invention_risk": 0.11666666666666667,
+    "method_counts": {
+     "learned": 240
+    }
+   }
+  },
+  "restoration_pool": {
+   "certified_threshold": 6.644346871206378,
+   "certified_count": 118,
+   "tested_count": 118,
+   "sequence_start_threshold": 1.8213430133594066,
+   "deletion_errors": 4,
+   "deletion_denominator": 308,
+   "deletion_ucb": 0.0294712643981996,
+   "invention_errors": 36,
+   "invention_denominator": 327,
+   "invention_ucb": 0.142780051347054,
+   "accepted": 327,
+   "coverage": 0.993920972644377,
+   "delta_alloc": 0.1,
+   "min_certifiable_alpha_descriptive": 0.06508261992499664,
+   "min_certifiable_alpha_threshold": 2.4205015664799605,
+   "test": {
+    "n": 446,
+    "accepted": 443,
+    "reviewed": 3,
+    "coverage": 0.9932735426008968,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 427,
+    "accepted_clean": 16,
+    "positive_coverage": 0.9930232558139535,
+    "clean_coverage": 1.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.9999302325581395,
+     "0.10": 0.9993023255813953,
+     "0.50": 0.9965116279069768
+    },
+    "deletion_denominator": 427,
+    "invention_denominator": 443,
+    "deletion_errors": 10,
+    "invention_errors": 70,
+    "deletion_risk": 0.0234192037470726,
+    "invention_risk": 0.1580135440180587,
+    "method_counts": {
+     "learned": 91,
+     "smooth_bicubic": 104,
+     "unsharp_bicubic": 248
+    }
+   }
+  },
+  "action_pool": {
+   "certified_threshold": 6.644346871206378,
+   "certified_count": 118,
+   "tested_count": 118,
+   "sequence_start_threshold": 1.8213430133594066,
+   "deletion_errors": 2,
+   "deletion_denominator": 308,
+   "deletion_ucb": 0.0202988058807887,
+   "invention_errors": 36,
+   "invention_denominator": 327,
+   "invention_ucb": 0.142780051347054,
+   "accepted": 327,
+   "coverage": 0.993920972644377,
+   "delta_alloc": 0.1,
+   "min_certifiable_alpha_descriptive": 0.06368297915487942,
+   "min_certifiable_alpha_threshold": 2.4205015664799605,
+   "test": {
+    "n": 446,
+    "accepted": 443,
+    "reviewed": 3,
+    "coverage": 0.9932735426008968,
+    "positive_n": 430,
+    "clean_n": 16,
+    "accepted_positive": 427,
+    "accepted_clean": 16,
+    "positive_coverage": 0.9930232558139535,
+    "clean_coverage": 1.0,
+    "prevalence_standardized_coverage": {
+     "0.01": 0.9999302325581395,
+     "0.10": 0.9993023255813953,
+     "0.50": 0.9965116279069768
+    },
+    "deletion_denominator": 427,
+    "invention_denominator": 443,
+    "deletion_errors": 8,
+    "invention_errors": 68,
+    "deletion_risk": 0.01873536299765808,
+    "invention_risk": 0.15349887133182843,
+    "method_counts": {
+     "learned": 78,
+     "raw_nearest": 77,
+     "smooth_bicubic": 76,
+     "unsharp_bicubic": 212
+    }
+   }
+  }
+ },
+ "familywise_portfolio": {
+  "delta": 0.1,
+  "policy_family": [
+   "action_pool",
+   "learned",
+   "raw_nearest",
+   "restoration_pool",
+   "smooth_bicubic",
+   "unsharp_bicubic"
+  ],
+  "delta_alloc_per_policy": 0.016666666666666666,
+  "policies": {
+   "action_pool": {
+    "certified_threshold": 1.8213430133594066,
+    "certified_count": 4,
+    "tested_count": 5,
+    "sequence_start_threshold": 1.8213430133594066,
+    "deletion_errors": 0,
+    "deletion_denominator": 99,
+    "deletion_ucb": 0.0472078524796058,
+    "invention_errors": 4,
+    "invention_denominator": 99,
+    "invention_ucb": 0.11519530988185418,
+    "accepted": 99,
+    "coverage": 0.3009118541033435,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 4.4274725664756005,
+     "deletion_errors": 0,
+     "deletion_denominator": 286,
+     "deletion_ucb": 0.016600154997419358,
+     "invention_errors": 31,
+     "invention_denominator": 286,
+     "invention_ucb": 0.16001357531017496
+    },
+    "min_certifiable_alpha_descriptive": 0.07925828235785976,
+    "min_certifiable_alpha_threshold": 2.4205015664799605
+   },
+   "learned": {
+    "certified_threshold": 3.3694051954698145,
+    "certified_count": 39,
+    "tested_count": 40,
+    "sequence_start_threshold": 2.719938232845166,
+    "deletion_errors": 2,
+    "deletion_denominator": 158,
+    "deletion_ucb": 0.05352362768056471,
+    "invention_errors": 11,
+    "invention_denominator": 158,
+    "invention_ucb": 0.13348601858304054,
+    "accepted": 158,
+    "coverage": 0.48024316109422494,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 2.279675468177274,
+     "deletion_errors": 0,
+     "deletion_denominator": 72,
+     "deletion_ucb": 0.06433047915604329,
+     "invention_errors": 4,
+     "invention_denominator": 72,
+     "invention_ucb": 0.15603539662392876
+    },
+    "min_certifiable_alpha_descriptive": 0.1134004376279076,
+    "min_certifiable_alpha_threshold": 3.1027979614168215
+   },
+   "raw_nearest": {
+    "certified_threshold": 3.236245419078653,
+    "certified_count": 25,
+    "tested_count": 26,
+    "sequence_start_threshold": 2.1696918396321703,
+    "deletion_errors": 0,
+    "deletion_denominator": 202,
+    "deletion_ucb": 0.023421804126669808,
+    "invention_errors": 9,
+    "invention_denominator": 202,
+    "invention_ucb": 0.09224115476109507,
+    "accepted": 202,
+    "coverage": 0.6139817629179332,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 4.013743847755507,
+     "deletion_errors": 0,
+     "deletion_denominator": 253,
+     "deletion_ucb": 0.018744978320996506,
+     "invention_errors": 25,
+     "invention_denominator": 253,
+     "invention_ucb": 0.15255597541007315
+    },
+    "min_certifiable_alpha_descriptive": 0.04914590405282831,
+    "min_certifiable_alpha_threshold": 2.29703960096497
+   },
+   "restoration_pool": {
+    "certified_threshold": 1.8213430133594066,
+    "certified_count": 5,
+    "tested_count": 6,
+    "sequence_start_threshold": 1.8213430133594066,
+    "deletion_errors": 0,
+    "deletion_denominator": 99,
+    "deletion_ucb": 0.0472078524796058,
+    "invention_errors": 4,
+    "invention_denominator": 99,
+    "invention_ucb": 0.11519530988185418,
+    "accepted": 99,
+    "coverage": 0.3009118541033435,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 4.513282482441994,
+     "deletion_errors": 0,
+     "deletion_denominator": 281,
+     "deletion_ucb": 0.01689302247574875,
+     "invention_errors": 31,
+     "invention_denominator": 281,
+     "invention_ucb": 0.16277541900239423
+    },
+    "min_certifiable_alpha_descriptive": 0.0809852667265788,
+    "min_certifiable_alpha_threshold": 2.4205015664799605
+   },
+   "smooth_bicubic": {
+    "certified_threshold": 3.969549690216674,
+    "certified_count": 50,
+    "tested_count": 51,
+    "sequence_start_threshold": 2.7236149147629347,
+    "deletion_errors": 0,
+    "deletion_denominator": 238,
+    "deletion_ucb": 0.01991454439700898,
+    "invention_errors": 22,
+    "invention_denominator": 238,
+    "invention_ucb": 0.1469292606176698,
+    "accepted": 238,
+    "coverage": 0.723404255319149,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 4.457822769268838,
+     "deletion_errors": 0,
+     "deletion_denominator": 255,
+     "deletion_ucb": 0.018599334705123233,
+     "invention_errors": 27,
+     "invention_denominator": 255,
+     "invention_ucb": 0.16061105459538655
+    },
+    "min_certifiable_alpha_descriptive": 0.07726016475529539,
+    "min_certifiable_alpha_threshold": 2.9144265677617707
+   },
+   "unsharp_bicubic": {
+    "certified_threshold": 4.580770207484978,
+    "certified_count": 64,
+    "tested_count": 65,
+    "sequence_start_threshold": 1.856368829897526,
+    "deletion_errors": 0,
+    "deletion_denominator": 268,
+    "deletion_ucb": 0.017705163798356387,
+    "invention_errors": 25,
+    "invention_denominator": 268,
+    "invention_ucb": 0.14426202161792587,
+    "accepted": 268,
+    "coverage": 0.8145896656534954,
+    "delta_alloc": 0.016666666666666666,
+    "first_failure": {
+     "threshold": 5.119348890391455,
+     "deletion_errors": 0,
+     "deletion_denominator": 279,
+     "deletion_ucb": 0.017013083423871044,
+     "invention_errors": 29,
+     "invention_denominator": 279,
+     "invention_ucb": 0.15557864261021023
+    },
+    "min_certifiable_alpha_descriptive": 0.06524222729899923,
+    "min_certifiable_alpha_threshold": 2.0108044354231898
+   }
+  },
+  "selected_policy": "unsharp_bicubic",
+  "selected_coverage": 0.8145896656534954,
+  "selected_threshold": 4.580770207484978,
+  "interpretation": "With probability at least 1 - delta over the certification sample, every certified (policy, gate) pair satisfies both population targets; selecting the max-coverage certified pair is therefore covered by the same statement.",
+  "selected_test": {
+   "n": 446,
+   "accepted": 360,
+   "reviewed": 86,
+   "coverage": 0.8071748878923767,
+   "positive_n": 430,
+   "clean_n": 16,
+   "accepted_positive": 359,
+   "accepted_clean": 1,
+   "positive_coverage": 0.8348837209302326,
+   "clean_coverage": 0.0625,
+   "prevalence_standardized_coverage": {
+    "0.01": 0.07022383720930232,
+    "0.10": 0.13973837209302326,
+    "0.50": 0.4486918604651163
+   },
+   "deletion_denominator": 359,
+   "invention_denominator": 360,
+   "deletion_errors": 0,
+   "invention_errors": 44,
+   "deletion_risk": 0.0,
+   "invention_risk": 0.12222222222222222,
+   "method_counts": {
+    "unsharp_bicubic": 360
+   }
+  }
+ },
+ "familywise_tuning_selected": {
+  "tuning_promise": {
+   "action_pool": 1.0,
+   "learned": 0.9242424242424242,
+   "raw_nearest": 1.0,
+   "restoration_pool": 1.0,
+   "smooth_bicubic": 1.0,
+   "unsharp_bicubic": 1.0
+  },
+  "selected_policy": "unsharp_bicubic",
+  "certificate": {
+   "certified_threshold": 6.666586255921886,
+   "certified_count": 118,
+   "tested_count": 118,
+   "sequence_start_threshold": 1.856368829897526,
+   "deletion_errors": 0,
+   "deletion_denominator": 308,
+   "deletion_ucb": 0.009679255008705265,
+   "invention_errors": 35,
+   "invention_denominator": 327,
+   "invention_ucb": 0.13939821530994362,
+   "accepted": 327,
+   "coverage": 0.993920972644377,
+   "delta_alloc": 0.1,
+   "min_certifiable_alpha_descriptive": 0.04566359632764001,
+   "min_certifiable_alpha_threshold": 2.0108044354231898
+  },
+  "interpretation": "Policy selection is measurable with respect to the tuning role; the fixed-sequence certificate for the selected policy therefore holds at the full joint level delta.",
+  "selected_test": {
+   "n": 446,
+   "accepted": 444,
+   "reviewed": 2,
+   "coverage": 0.9955156950672646,
+   "positive_n": 430,
+   "clean_n": 16,
+   "accepted_positive": 428,
+   "accepted_clean": 16,
+   "positive_coverage": 0.9953488372093023,
+   "clean_coverage": 1.0,
+   "prevalence_standardized_coverage": {
+    "0.01": 0.999953488372093,
+    "0.10": 0.9995348837209302,
+    "0.50": 0.9976744186046511
+   },
+   "deletion_denominator": 428,
+   "invention_denominator": 444,
+   "deletion_errors": 2,
+   "invention_errors": 67,
+   "deletion_risk": 0.004672897196261682,
+   "invention_risk": 0.15090090090090091,
+   "method_counts": {
+    "unsharp_bicubic": 444
+   }
+  }
+ }
+}

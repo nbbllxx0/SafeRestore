@@ -1,0 +1,9 @@
+{
+ "alpha_evidence_loss": 0.15,
+ "alpha_excess_activation": 0.15,
+ "delta": 0.10,
+ "min_accept": 15,
+ "min_positive_accept": 15,
+ "seeds": [301, 303, 307, 311, 313],
+ "test_fraction": 0.25
+}

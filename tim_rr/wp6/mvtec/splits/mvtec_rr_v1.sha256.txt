@@ -1,0 +1,1 @@
+2839d2c93829419d9acef18553c6fb5308c13d5ba39b32df13d9f481ffacd522  mvtec_rr_v1.json

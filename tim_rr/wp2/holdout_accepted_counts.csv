@@ -1,0 +1,6 @@
+seed,selected_policy,holdout_n,accepted_positives,loss_incidents,loss_U,accepted_images,activation_incidents,activation_U,holdout_coverage,endpoint_level,max_loss_incidents_allowed,max_activation_incidents_allowed,source
+201,unsharp_bicubic,329,98,4,0.1201,107,2,0.0814,0.3252,0.00625,6,7,tim_upgrade/experiments/tim_analysis/carinthia_s_seed201_floor0.25.json
+203,bilinear,329,98,6,0.149,106,1,0.0658,0.3222,0.00625,6,6,tim_upgrade/experiments/tim_analysis/carinthia_s_seed203_floor0.25.json
+207,action_pool,329,102,6,0.1434,110,4,0.1075,0.3343,0.00625,6,7,tim_upgrade/experiments/tim_analysis/carinthia_s_seed207_floor0.25.json
+211,action_pool,329,136,9,0.1386,147,8,0.1196,0.4468,0.00625,10,11,tim_upgrade/experiments/tim_analysis/carinthia_s_seed211_floor0.25.json
+223,unsharp_bicubic,329,116,7,0.1386,124,3,0.0835,0.3769,0.00625,7,8,tim_upgrade/experiments/tim_analysis/carinthia_s_seed223_floor0.25.json

@@ -1,0 +1,179 @@
+{
+  "dataset": "kolektor_sdd2",
+  "seed": 201,
+  "device": "cuda",
+  "detector_threshold": 0.9281537532806396,
+  "target_pixel_fpr": 0.001,
+  "deletion_recall_floor": 0.25,
+  "invention_fpr_limit": 0.002,
+  "detector_base": 32,
+  "restorer_channels": 32,
+  "restorer_blocks": 6,
+  "detector_family": "tiny_unet",
+  "restorer_family": "compact",
+  "corruption_key": "v4corr:eval",
+  "boundary_tolerance": 8,
+  "detector_history": [
+    {
+      "epoch": 1,
+      "loss": 1.6101768471602071,
+      "validation_positive_dice": 0.4052174049144497
+    },
+    {
+      "epoch": 2,
+      "loss": 1.4713803757132822,
+      "validation_positive_dice": 0.478270756384852
+    },
+    {
+      "epoch": 3,
+      "loss": 1.377922717546452,
+      "validation_positive_dice": 0.4173376749136618
+    },
+    {
+      "epoch": 4,
+      "loss": 1.3413421597783965,
+      "validation_positive_dice": 0.4955012032344025
+    },
+    {
+      "epoch": 5,
+      "loss": 1.2978826499398732,
+      "validation_positive_dice": 0.37986578110947594
+    },
+    {
+      "epoch": 6,
+      "loss": 1.3192097051984313,
+      "validation_positive_dice": 0.3372583431381808
+    },
+    {
+      "epoch": 7,
+      "loss": 1.2742625085604673,
+      "validation_positive_dice": 0.37444543232190974
+    },
+    {
+      "epoch": 8,
+      "loss": 1.2664560041675679,
+      "validation_positive_dice": 0.46914692850289297
+    },
+    {
+      "epoch": 9,
+      "loss": 1.2104470533442635,
+      "validation_positive_dice": 0.4228076862589437
+    },
+    {
+      "epoch": 10,
+      "loss": 1.2894238233566284,
+      "validation_positive_dice": 0.4693971995492371
+    },
+    {
+      "epoch": 11,
+      "loss": 1.177725248598639,
+      "validation_positive_dice": 0.5300945411531293
+    },
+    {
+      "epoch": 12,
+      "loss": 1.1849550976918612,
+      "validation_positive_dice": 0.4676256065009808
+    },
+    {
+      "epoch": 13,
+      "loss": 1.1918281192724416,
+      "validation_positive_dice": 0.5036219750359958
+    },
+    {
+      "epoch": 14,
+      "loss": 1.2155719495922155,
+      "validation_positive_dice": 0.5179389288686976
+    },
+    {
+      "epoch": 15,
+      "loss": 1.171810719663697,
+      "validation_positive_dice": 0.5744887283261941
+    }
+  ],
+  "restorer_history": [
+    {
+      "epoch": 1,
+      "loss": 0.027607053421394672
+    },
+    {
+      "epoch": 2,
+      "loss": 0.024152426339815118
+    },
+    {
+      "epoch": 3,
+      "loss": 0.024307272994535507
+    },
+    {
+      "epoch": 4,
+      "loss": 0.024217042942784425
+    },
+    {
+      "epoch": 5,
+      "loss": 0.02418815619123809
+    }
+  ],
+  "test_methods": {
+    "bicubic": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9470871967810579,
+      "mean_clean_fpr": 0.0005189170552626363,
+      "deletion_error_rate": 0.037848605577689244,
+      "invention_error_rate": 0.06573705179282868,
+      "mean_psnr": 31.982484551539933
+    },
+    "bilinear": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9470168564717802,
+      "mean_clean_fpr": 0.0005381201024786051,
+      "deletion_error_rate": 0.037848605577689244,
+      "invention_error_rate": 0.0647410358565737,
+      "mean_psnr": 32.83604119023479
+    },
+    "learned": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9462705577508708,
+      "mean_clean_fpr": 0.0005818727171553367,
+      "deletion_error_rate": 0.036852589641434265,
+      "invention_error_rate": 0.06573705179282868,
+      "mean_psnr": 33.081512504364866
+    },
+    "raw_nearest": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9466099083097413,
+      "mean_clean_fpr": 0.0005732667329314598,
+      "deletion_error_rate": 0.037848605577689244,
+      "invention_error_rate": 0.07071713147410359,
+      "mean_psnr": 30.66389439685411
+    },
+    "smooth_bicubic": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9470164134234155,
+      "mean_clean_fpr": 0.0005000716969905161,
+      "deletion_error_rate": 0.037848605577689244,
+      "invention_error_rate": 0.05976095617529881,
+      "mean_psnr": 32.8519489774666
+    },
+    "unsharp_bicubic": {
+      "n": 1004,
+      "mean_pixel_recall": 0.9467474295687213,
+      "mean_clean_fpr": 0.000491609333129965,
+      "deletion_error_rate": 0.037848605577689244,
+      "invention_error_rate": 0.05776892430278884,
+      "mean_psnr": 30.35917252278423
+    }
+  },
+  "elapsed_seconds": 417.02505588531494,
+  "features": [
+    "entropy",
+    "forward_consistency",
+    "detector_disagreement",
+    "evidence_shift",
+    "restoration_residual",
+    "high_probability_area",
+    "peak_probability",
+    "peak_disagreement",
+    "secondary_peak",
+    "active_components"
+  ],
+  "regenerated_from": "<archive root>\\tim_upgrade\\experiments\\ksdd2_final_trainseed201"
+}

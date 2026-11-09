@@ -16,6 +16,7 @@ class DatasetManifest:
     read_only: bool
     split_scheme: str
     inventory_sha256: str | None = None
+    archive_sha256: str | None = None
 
 
 def load_manifest(path: str | Path) -> DatasetManifest:
@@ -33,6 +34,7 @@ def load_manifest(path: str | Path) -> DatasetManifest:
         read_only=bool(payload.get("read_only", True)),
         split_scheme=str(payload.get("split_scheme", "UNVERIFIED")),
         inventory_sha256=payload.get("inventory_sha256"),
+        archive_sha256=payload.get("archive_sha256"),
     )
 
 

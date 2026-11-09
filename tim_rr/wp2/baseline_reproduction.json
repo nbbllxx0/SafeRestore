@@ -1,0 +1,317 @@
+{
+  "settings": {
+    "f0": 0.002,
+    "alpha": 0.15,
+    "delta": 0.1
+  },
+  "runs": [
+    {
+      "domain": "carinthia_s",
+      "seed": 201,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed201_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "unsharp_bicubic"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 203,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed203_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "bilinear"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 207,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed207_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "action_pool"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 211,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed211_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "action_pool"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 223,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed223_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "unsharp_bicubic"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 201,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed201_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 203,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed203_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "smooth_bicubic"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 207,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed207_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": "bicubic"
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 211,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed211_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "carinthia_s",
+      "seed": 223,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\carinthia_s_seed223_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 201,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed201_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 203,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed203_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 207,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed207_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 211,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed211_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 223,
+      "floor": 0.25,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed223_floor0.25.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 201,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed201_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 203,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed203_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 207,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed207_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 211,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed211_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    },
+    {
+      "domain": "kolektor_sdd2",
+      "seed": 223,
+      "floor": 0.5,
+      "reference": "tim_upgrade\\experiments\\tim_analysis\\kolektor_sdd2_seed223_floor0.50.json",
+      "n_differences": 0,
+      "differences_first20": [],
+      "portfolio_selected": null
+    }
+  ],
+  "summary": {
+    "carinthia_s_floor0.25": {
+      "portfolio_qualified": 5,
+      "portfolio_selections": [
+        "unsharp_bicubic",
+        "bilinear",
+        "action_pool",
+        "action_pool",
+        "unsharp_bicubic"
+      ],
+      "familywise_single": {
+        "raw_nearest": 4,
+        "bilinear": 4,
+        "bicubic": 4,
+        "smooth_bicubic": 4,
+        "unsharp_bicubic": 4,
+        "learned": 1,
+        "restoration_pool": 3,
+        "action_pool": 3
+      },
+      "marginal": {
+        "raw_nearest": 2,
+        "bilinear": 2,
+        "bicubic": 3,
+        "smooth_bicubic": 2,
+        "unsharp_bicubic": 1,
+        "learned": 0,
+        "restoration_pool": 0,
+        "action_pool": 1
+      },
+      "tuning_selected_qualified": 4
+    },
+    "carinthia_s_floor0.50": {
+      "portfolio_qualified": 2,
+      "portfolio_selections": [
+        null,
+        "smooth_bicubic",
+        "bicubic",
+        null,
+        null
+      ],
+      "familywise_single": {
+        "raw_nearest": 0,
+        "bilinear": 2,
+        "bicubic": 2,
+        "smooth_bicubic": 3,
+        "unsharp_bicubic": 2,
+        "learned": 0,
+        "restoration_pool": 1,
+        "action_pool": 1
+      },
+      "marginal": {
+        "raw_nearest": 0,
+        "bilinear": 2,
+        "bicubic": 2,
+        "smooth_bicubic": 3,
+        "unsharp_bicubic": 1,
+        "learned": 0,
+        "restoration_pool": 1,
+        "action_pool": 1
+      },
+      "tuning_selected_qualified": 2
+    },
+    "kolektor_sdd2_floor0.25": {
+      "portfolio_qualified": 0,
+      "portfolio_selections": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "familywise_single": {
+        "raw_nearest": 0,
+        "bilinear": 0,
+        "bicubic": 0,
+        "smooth_bicubic": 0,
+        "unsharp_bicubic": 0,
+        "learned": 0,
+        "restoration_pool": 0,
+        "action_pool": 0
+      },
+      "marginal": {
+        "raw_nearest": 0,
+        "bilinear": 0,
+        "bicubic": 0,
+        "smooth_bicubic": 0,
+        "unsharp_bicubic": 0,
+        "learned": 0,
+        "restoration_pool": 0,
+        "action_pool": 0
+      },
+      "tuning_selected_qualified": 0
+    },
+    "kolektor_sdd2_floor0.50": {
+      "portfolio_qualified": 0,
+      "portfolio_selections": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "familywise_single": {
+        "raw_nearest": 0,
+        "bilinear": 0,
+        "bicubic": 0,
+        "smooth_bicubic": 0,
+        "unsharp_bicubic": 0,
+        "learned": 0,
+        "restoration_pool": 0,
+        "action_pool": 0
+      },
+      "marginal": {
+        "raw_nearest": 0,
+        "bilinear": 0,
+        "bicubic": 0,
+        "smooth_bicubic": 0,
+        "unsharp_bicubic": 0,
+        "learned": 0,
+        "restoration_pool": 0,
+        "action_pool": 0
+      },
+      "tuning_selected_qualified": 0
+    }
+  },
+  "all_identical": true,
+  "seconds": 38.2
+}

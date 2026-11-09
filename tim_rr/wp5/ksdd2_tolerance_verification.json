@@ -1,0 +1,138 @@
+{
+  "201": {
+    "r8_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed201\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r8_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed201\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r8_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed201\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    },
+    "r0_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance0px_trainseed201\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r0_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance0px_trainseed201\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r0_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance0px_trainseed201\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    },
+    "r4_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance4px_trainseed201\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r4_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance4px_trainseed201\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r4_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_tolerance4px_trainseed201\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    }
+  },
+  "203": {
+    "r8_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed203\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r8_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed203\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r8_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed203\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    }
+  },
+  "207": {
+    "r8_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed207\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r8_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed207\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r8_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed207\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    }
+  },
+  "211": {
+    "r8_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed211\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r8_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed211\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r8_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed211\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    }
+  },
+  "223": {
+    "r8_detector_val": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed223\\detector_val_records.csv",
+      "label_mismatches": 0,
+      "rows": 2094
+    },
+    "r8_calibration": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed223\\calibration_records.csv",
+      "label_mismatches": 0,
+      "rows": 3624
+    },
+    "r8_test": {
+      "exact": true,
+      "frozen": "<archive root>\\tim_upgrade\\experiments\\ksdd2_rich_trainseed223\\test_records.csv",
+      "label_mismatches": 0,
+      "rows": 6024
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+ "seed": 301,
+ "draws": 200,
+ "half_b_specimens": {
+  "good": 31,
+  "ng": 35
+ },
+ "ungated_half_b": {
+  "raw": {
+   "evidence_loss_rate": 0.4294294294294294,
+   "excess_activation_rate": 0.017676767676767676,
+   "n": 792,
+   "positives": 333
+  },
+  "gain": {
+   "evidence_loss_rate": 0.4594594594594595,
+   "excess_activation_rate": 0.07702020202020202,
+   "n": 792,
+   "positives": 333
+  },
+  "gamma": {
+   "evidence_loss_rate": 0.5405405405405406,
+   "excess_activation_rate": 0.07702020202020202,
+   "n": 792,
+   "positives": 333
+  },
+  "clahe": {
+   "evidence_loss_rate": 0.47147147147147145,
+   "excess_activation_rate": 0.03409090909090909,
+   "n": 792,
+   "positives": 333
+  },
+  "gain_unsharp": {
+   "evidence_loss_rate": 0.4744744744744745,
+   "excess_activation_rate": 0.059343434343434344,
+   "n": 792,
+   "positives": 333
+  },
+  "learned": {
+   "evidence_loss_rate": 0.5795795795795796,
+   "excess_activation_rate": 0.3194444444444444,
+   "n": 792,
+   "positives": 333
+  }
+ },
+ "frontier_half_b": {
+  "raw": {
+   "auc_loss": 0.7131762973868238,
+   "auc_activation": 0.47383400661035624,
+   "top10": {
+    "loss": 0.22448979591836735,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 49
+   },
+   "top20": {
+    "loss": 0.3176470588235294,
+    "activation": 0.0189873417721519,
+    "accepted_positives": 85
+   },
+   "top30": {
+    "loss": 0.31451612903225806,
+    "activation": 0.016877637130801686,
+    "accepted_positives": 124
+   },
+   "top50": {
+    "loss": 0.297029702970297,
+    "activation": 0.012626262626262626,
+    "accepted_positives": 202
+   }
+  },
+  "gain": {
+   "auc_loss": 0.7970225127087872,
+   "auc_activation": 0.7143369738287996,
+   "top10": {
+    "loss": 0.19230769230769232,
+    "activation": 0.02531645569620253,
+    "accepted_positives": 52
+   },
+   "top20": {
+    "loss": 0.20952380952380953,
+    "activation": 0.02531645569620253,
+    "accepted_positives": 105
+   },
+   "top30": {
+    "loss": 0.2537313432835821,
+    "activation": 0.02531645569620253,
+    "accepted_positives": 134
+   },
+   "top50": {
+    "loss": 0.25961538461538464,
+    "activation": 0.022727272727272728,
+    "accepted_positives": 208
+   }
+  },
+  "gamma": {
+   "auc_loss": 0.8075163398692812,
+   "auc_activation": 0.5127267834316342,
+   "top10": {
+    "loss": 0.19607843137254902,
+    "activation": 0.02531645569620253,
+    "accepted_positives": 51
+   },
+   "top20": {
+    "loss": 0.27884615384615385,
+    "activation": 0.04430379746835443,
+    "accepted_positives": 104
+   },
+   "top30": {
+    "loss": 0.27972027972027974,
+    "activation": 0.03375527426160337,
+    "accepted_positives": 143
+   },
+   "top50": {
+    "loss": 0.3588516746411483,
+    "activation": 0.05555555555555555,
+    "accepted_positives": 209
+   }
+  },
+  "clahe": {
+   "auc_loss": 0.7253184713375795,
+   "auc_activation": 0.493923989348826,
+   "top10": {
+    "loss": 0.32558139534883723,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 43
+   },
+   "top20": {
+    "loss": 0.3181818181818182,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 88
+   },
+   "top30": {
+    "loss": 0.3464566929133858,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 127
+   },
+   "top50": {
+    "loss": 0.3113207547169811,
+    "activation": 0.045454545454545456,
+    "accepted_positives": 212
+   }
+  },
+  "gain_unsharp": {
+   "auc_loss": 0.814249547920434,
+   "auc_activation": 0.5759531629301727,
+   "top10": {
+    "loss": 0.23404255319148937,
+    "activation": 0.0,
+    "accepted_positives": 47
+   },
+   "top20": {
+    "loss": 0.26262626262626265,
+    "activation": 0.006329113924050633,
+    "accepted_positives": 99
+   },
+   "top30": {
+    "loss": 0.22535211267605634,
+    "activation": 0.004219409282700422,
+    "accepted_positives": 142
+   },
+   "top50": {
+    "loss": 0.25806451612903225,
+    "activation": 0.04040404040404041,
+    "accepted_positives": 217
+   }
+  },
+  "learned": {
+   "auc_loss": 0.5973353071798668,
+   "auc_activation": 0.8641680171889093,
+   "top10": {
+    "loss": 0.21739130434782608,
+    "activation": 0.0,
+    "accepted_positives": 46
+   },
+   "top20": {
+    "loss": 0.36470588235294116,
+    "activation": 0.04430379746835443,
+    "accepted_positives": 85
+   },
+   "top30": {
+    "loss": 0.45,
+    "activation": 0.06329113924050633,
+    "accepted_positives": 120
+   },
+   "top50": {
+    "loss": 0.5683060109289617,
+    "activation": 0.04292929292929293,
+    "accepted_positives": 183
+   }
+  },
+  "restoration_pool": {
+   "auc_loss": 0.7759678597516435,
+   "auc_activation": 0.6746857054167313,
+   "top10": {
+    "loss": 0.2,
+    "activation": 0.0,
+    "accepted_positives": 50
+   },
+   "top20": {
+    "loss": 0.23232323232323232,
+    "activation": 0.0189873417721519,
+    "accepted_positives": 99
+   },
+   "top30": {
+    "loss": 0.2550335570469799,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 149
+   },
+   "top50": {
+    "loss": 0.2626728110599078,
+    "activation": 0.010101010101010102,
+    "accepted_positives": 217
+   }
+  },
+  "action_pool": {
+   "auc_loss": 0.7693043798306957,
+   "auc_activation": 0.6956492135902498,
+   "top10": {
+    "loss": 0.2,
+    "activation": 0.0,
+    "accepted_positives": 50
+   },
+   "top20": {
+    "loss": 0.22,
+    "activation": 0.0189873417721519,
+    "accepted_positives": 100
+   },
+   "top30": {
+    "loss": 0.24666666666666667,
+    "activation": 0.012658227848101266,
+    "accepted_positives": 150
+   },
+   "top50": {
+    "loss": 0.2579185520361991,
+    "activation": 0.007575757575757576,
+    "accepted_positives": 221
+   }
+  }
+ },
+ "results": {
+  "0.0": {
+   "p_portfolio": 0.0,
+   "mean_portfolio_cov_when_qualified": null,
+   "p_tuning_selected": 0.0,
+   "mean_ts_cov_when_qualified": null,
+   "portfolio_selected_counts": {}
+  },
+  "0.25": {
+   "p_portfolio": 0.0,
+   "mean_portfolio_cov_when_qualified": null,
+   "p_tuning_selected": 0.015,
+   "mean_ts_cov_when_qualified": 0.24222222222222223,
+   "portfolio_selected_counts": {}
+  }
+ }
+}

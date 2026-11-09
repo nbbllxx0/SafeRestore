@@ -1,0 +1,57 @@
+{
+  "201": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.1285010363413007,
+    "alpha_star_policy": "restoration_pool",
+    "alpha_star_ties": [
+      "restoration_pool",
+      "action_pool"
+    ]
+  },
+  "203": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.14409039131834475,
+    "alpha_star_policy": "learned",
+    "alpha_star_ties": [
+      "learned"
+    ]
+  },
+  "207": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.27762240107749386,
+    "alpha_star_policy": "unsharp_bicubic",
+    "alpha_star_ties": [
+      "unsharp_bicubic"
+    ]
+  },
+  "211": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.17612071060451798,
+    "alpha_star_policy": "smooth_bicubic",
+    "alpha_star_ties": [
+      "smooth_bicubic"
+    ]
+  },
+  "223": {
+    "identical_to_definitive": true,
+    "n_diffs": 0,
+    "first_diffs": [],
+    "alpha_star": 0.16473473302405442,
+    "alpha_star_policy": "bilinear",
+    "alpha_star_ties": [
+      "bilinear"
+    ]
+  },
+  "seed201_qualification_raw_incidence": {
+    "positive": "1/109",
+    "clean": "32/495"
+  }
+}
